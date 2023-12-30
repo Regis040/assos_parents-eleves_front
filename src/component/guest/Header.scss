@@ -1,0 +1,53 @@
+header {
+    background-color: aquamarine;
+    height: 250px;
+    width: 75%;
+    margin: auto;
+}
+
+p {
+    color: blue;
+}
+
+.logo {
+    width: 150px;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+    border-radius: 50%;
+}
+
+nav {
+   display: flex; 
+   justify-content: space-between;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 50px;
+  }
+  
+   a {
+    text-decoration: none;
+   }
+  
+  li { 
+    list-style: none;
+    margin-right: 2rem;
+    border: 2px solid black;
+    padding:5px;
+    height: 25px;
+    background-color: #82a2ab;
+  }
+  
+  li:hover {
+    background-color: beige;
+    color: blue;
+  }
+
+  h1 {
+    display: block;
+    text-align: center;
+  }

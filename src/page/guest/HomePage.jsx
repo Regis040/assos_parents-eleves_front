@@ -1,12 +1,16 @@
 import React from "react";
 import Header from "../../component/guest/Header";
+import NewsHomePage from "../../component/guest/NewsHome";
+import Schools from "../../component/guest/Schools";
+import Footer from "../../component/guest/Footer";
 
 const HomePage = () => {
   return (
     <>
       <Header />
-
-      <p>Bienvenue sur King of coworkings</p>
+      <NewsHomePage />
+      <Schools />      
+      <Footer />
     </>
   );
 };
