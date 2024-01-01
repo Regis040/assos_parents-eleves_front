@@ -5,10 +5,6 @@ header {
     margin: auto;
 }
 
-p {
-    color: blue;
-}
-
 .logo {
     width: 150px;
     position: relative;
@@ -17,23 +13,23 @@ p {
     border-radius: 50%;
 }
 
-nav {
+#navheader {
    display: flex; 
    justify-content: space-between;
 }
 
-ul {
+#navheader ul {
     display: flex;
     justify-content: center;
     justify-items: center;
     margin-top: 50px;
   }
   
-   a {
+a {
     text-decoration: none;
    }
   
-  li { 
+   #navheader ul li { 
     list-style: none;
     margin-right: 2rem;
     border: 2px solid black;
@@ -42,7 +38,7 @@ ul {
     background-color: #82a2ab;
   }
   
-  li:hover {
+  #navheader ul li:hover {
     background-color: beige;
     color: blue;
   }

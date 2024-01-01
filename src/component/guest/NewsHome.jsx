@@ -1,7 +1,7 @@
 import "./NewsHome.scss";
 
 
-function NewsHomePage () {
+function NewsHome () {
     return (
         <>
             <h2>L'actualité</h2>
@@ -34,4 +34,4 @@ function NewsHomePage () {
         </>
     )
 }
-export default NewsHomePage;
+export default NewsHome;
