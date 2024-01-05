@@ -43,7 +43,7 @@ const LoginPage = () => {
   return (
     <section>
       {message && <p>{message}</p>}
-      <form onSubmit={handleLogin}>
+      <form onSubmit={handleLogin} className="formposition">
         <label for="username">
           Nom d'utilisateur :
           <input type="text" name="username" id="username" required/>

@@ -1,0 +1,27 @@
+.articlesdesign {
+    width: 75%;
+    background-color: #56CCF2;
+    margin: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+h2, h4 {
+    text-align: center;
+}
+
+.articlesdesign button {
+    position: relative;
+    left: 50%;    
+    transform: translateX(-50%);
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    background-color: #3184EE;
+        box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
+-webkit-box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
+
+}

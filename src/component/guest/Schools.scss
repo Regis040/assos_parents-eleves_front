@@ -23,3 +23,20 @@ h2, h3  {
     height: 40vh;
 }
 
+@media screen and (max-width: 500px) {
+
+
+
+.container-schools {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+ }
+
+.container-school {
+    width: 100%;
+    margin: auto;
+}
+
+} 

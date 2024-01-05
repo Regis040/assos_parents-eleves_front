@@ -3,41 +3,8 @@
     src: url(../public/assets/typo/Roboto/Roboto-Regular.ttf);    
 }
 
-/* h2 {
-    color: $typoSombre;
-} */
 
 body, header, footer {
     font-family: 'Roboto Regular';
 } 
 
-
-
-/* @media screen and (max-width: 768px) {
-    
-    .main-menu {
-        flex-direction: column;
-        padding: 0;
-        margin: 0;
-        height: inherit;
-        width: 100%;
-    }
-    
-    .main-menu li {
-        padding: 1rem 0 
-    }
-    
-    #destinations {
-        flex-direction: column;
-    }
-    
-    .destination {
-        width: 80%;
-        margin: 1rem auto;
-    }
-    
-    .destination .btn {
-        width: 80%;
-        text-align: center;
-    }
-} */

@@ -1,9 +1,11 @@
 header {
-    background-color: aquamarine;
-    height: 250px;
+    background-color:#44A9F0;
+    height: 300px;
     width: 75%;
     margin: auto;
+    border-radius: 5px;
 }
+
 
 .logo {
     width: 150px;
@@ -13,6 +15,8 @@ header {
     border-radius: 50%;
 }
 
+
+// la navigation normale vers les différentes pages
 #navheader {
    display: flex; 
    justify-content: space-between;
@@ -25,25 +29,99 @@ header {
     margin-top: 50px;
   }
   
-a {
-    text-decoration: none;
-   }
+  header a {
+    text-decoration: none; 
+}
+
+
   
    #navheader ul li { 
     list-style: none;
     margin-right: 2rem;
-    border: 2px solid black;
+    border-radius: 10px;;
+    border: 2px solid darkblue;
+    cursor: pointer;
     padding:5px;
     height: 25px;
-    background-color: #82a2ab;
+    background-color: #3184EE;
+    color: white;
+    box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
+-webkit-box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
   }
   
   #navheader ul li:hover {
-    background-color: beige;
-    color: blue;
+    background-color:#56CCF2;
+    color: black;
   }
+
+
 
   h1 {
     display: block;
     text-align: center;
+    padding-bottom: 1rem;
   }
+
+  // Lien vers la page du login
+
+  #loginarea {
+    background-color: #0082c8;
+    margin-bottom: 0;
+    height: 50px;
+  }
+
+  #loginarea ul {
+    display: flex;  
+    justify-content: end;
+  }
+
+  #loginarea ul li {
+    list-style: none;
+    border: 2px solid white;
+    padding: 5px;
+    margin-right: 1rem;
+    text-align: center;
+    box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
+  }
+
+  .logo-facebook {
+    height: 30px;   
+   color: blue;
+  }
+
+
+@media screen and (max-width: 500px) {
+
+body {
+  margin: 0;
+}
+header {
+      height: 350px;
+      width: 100%;
+      margin: auto;
+}
+
+.logo {
+  width: 100px;
+  position: relative;
+  border-radius: 50%;
+}
+
+#navheader ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 3px;
+}
+
+h1 {
+  display: block;
+  text-align: center;
+  font-size: 25px;
+}
+
+    }

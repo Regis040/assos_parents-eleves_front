@@ -19,14 +19,14 @@ const ArticlesPage = () => {
     <>
       <Header />
 
-      <h1>Liste des articles : </h1>
+      <h2>Les sujets du mois : </h2>
 
       {articles ? (
         <>
           {articles.map((article) => {
             return (
               <article>
-                <h2>{article.name}</h2>
+                <h2>{article.articlebody}</h2>
                 <Link to={`/article/details/${article.id}`}>Voir l'article</Link>
               </article>
             );

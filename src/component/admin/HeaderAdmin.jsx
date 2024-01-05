@@ -1,4 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
+import "./HeaderAdmin.scss";
 
 const HeaderAdmin = () => {
 
@@ -14,9 +15,9 @@ const HeaderAdmin = () => {
     };
 
   return (
-    <header>
-            <nav>
-        <ul>
+    <div class="headeradmin">
+      <nav id="navheaderadmin">
+        <ul id="navheaderadminposition">
           <li>
             <Link to="/admin/">Dashboard</Link>
           </li>
@@ -26,10 +27,13 @@ const HeaderAdmin = () => {
           <li>
             <Link to="/admin/articles/create">Créer un article</Link>
           </li>
+          <li>
+            <Link to="/admin/comments">Créer un commentaire</Link>
+          </li>
         </ul>
         <button onClick={handleLogout}>Se déconnecter</button>
       </nav>
-    </header>
+    </div>
   );
 };
 
