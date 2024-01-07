@@ -5,7 +5,7 @@ function NewsHome () {
     return (
         <>
             <h2>L'actualité</h2>
-            <div class="containers">
+            <div class="containers" id="liennewshome">
                 <div class="container">
                     <div class="img-container"><img  src="../../assets/imgs/harcelement.png" alt="le harcelement à l'école" /></div>
                     <div class="content">

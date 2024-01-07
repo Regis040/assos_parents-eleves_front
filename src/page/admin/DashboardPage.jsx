@@ -5,7 +5,6 @@ import { useEffect } from "react";
 const DashboardPage = () => {
        
         const navigate = useNavigate();
-
        
         useEffect (() => {
         
@@ -13,9 +12,7 @@ const DashboardPage = () => {
 
         if (!token) {
           navigate("/login");
-        }
-
-     
+        }     
 });
 
   return (

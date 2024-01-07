@@ -2,14 +2,14 @@ import "./Schools.scss";
 
 function Schools () {
     return (
-    <>
+    <section id="https://http://localhost:3001/#lienchools">
         <h2>Les établissement scolaires</h2>
-        <div class="container-schools">            
+        <div class="container-schools" >            
             <div class="container-school">
-            <a href="#">
-                <div class="img-container-school"><img class="img-container-school" src="../../assets/imgs/maternelle.jpg" alt="la maternelle" /></div>
+                <a href="#">
+                    <div class="img-container-school"><img class="img-container-school" src="../../assets/imgs/maternelle.jpg" alt="la maternelle" /></div>
                 </a> 
-                <h3>MATERNELLE</h3>
+                    <h3>MATERNELLE</h3>
             </div>               
             <div class="container-school">
                 <a href="#">
@@ -30,7 +30,7 @@ function Schools () {
                 <h3>LYCEE</h3>
             </div>    
         </div>
-    </>
+    </section>
     )
 }
 export default Schools;

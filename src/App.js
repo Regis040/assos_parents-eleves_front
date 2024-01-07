@@ -11,6 +11,7 @@ import AdminArticleCreate from './page/admin/AdminArticleCreate';
 import CommentEachPage from './page/guest/CommentEachPage';
 import CommentsPage from './page/guest/CommentsPage';
 import AdminCommentsPage from './page/admin/AdminCommentsPage';
+import AboutUsPage from './page/guest/AboutUsPage';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/articles" element={<ArticlesPage />} />
             <Route path="/article/details/:id" element={<ArticleEachPage />} />  
+            <Route path="/aboutus" element={<AboutUsPage />} />
 
             <Route path="/comment/details/:id" element={<CommentEachPage/>} />          
             <Route path="/comments" element={<CommentsPage />} />

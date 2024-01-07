@@ -15,11 +15,10 @@ const AdminArticleCreate = () => {
   
         const articletitle = event.target.articletitle.value;
         const articlebody = event.target.articlebody.value;
-
    
         const articleToCreate = {
-            name: articletitle,
-            subject: articlebody,
+          articletitle: articletitle,
+          articlebody: articlebody,
           };
 
       
@@ -28,7 +27,7 @@ const AdminArticleCreate = () => {
           const token = localStorage.getItem("jwt");
 
 
-          const createArticleResponse = await fetch("http://localhost:3000/articles/create", {
+          const createArticleResponse = await fetch("http://localhost:3000/articles", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

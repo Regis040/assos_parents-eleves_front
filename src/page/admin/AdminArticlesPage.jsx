@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import HeaderAdmin from "../../component/admin/HeaderAdmin";
 import { jwtDecode } from "jwt-decode";
+import { Link } from "react-router-dom";
 
 const AdminArticlesPage = () => {
    
@@ -55,6 +56,7 @@ const AdminArticlesPage = () => {
                 {decodedToken.data.role !==1 && (
                   <button onClick={(event) => handleDeleteArticle(event, article.id)}>Supprimer</button>
                 )}
+                <Link to={`/admin/articles/update/${article.id}`}>Mise à jour de l'article</Link>
               </article>
             );
           })}
