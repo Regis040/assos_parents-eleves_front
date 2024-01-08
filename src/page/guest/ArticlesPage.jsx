@@ -6,6 +6,7 @@ import "./ArticlesPage.scss";
 const ArticlesPage = () => {
   const [articles, setArticles] = useState(null);
   const [comments, setComments] = useState(null);
+  const [articlesId, setArticlesId] = useState(null);
 
   const {id}=useParams();
 
@@ -27,6 +28,60 @@ const ArticlesPage = () => {
     })();
   }, []);
 
+  useEffect(() => {
+    (async () => {
+      const articleidResponse = await fetch("http://localhost:3000/articles/" + id);
+      const articleidResponseData = await articleidResponse.json();
+      setArticlesId(articleidResponseData);
+    })();
+  }, [id]);
+
+
+
+  const handleCreateComment = async (event, articleId) => {
+    event.preventDefault();
+  
+    
+    const content = event.target.content.value;   
+    
+   
+    const commentToCreate = {
+      content: content,      
+      ArticleId: articleId,
+    };
+    console.log(commentToCreate)
+    
+    
+    const commentToCreateJson = JSON.stringify(commentToCreate);
+
+    
+    try {
+      const commentResponse = await fetch("http://localhost:3000/comments" , {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",         
+        Authorization: "Bearer " + token,
+      },     
+      body: commentToCreateJson,
+      
+    });
+    console.log(commentToCreate)
+    //on teste la réponse via un boolen si réponse ou si pas de réponse via le .ok
+    if (commentResponse.ok) {
+    //la fonction alert permet de comuniquer un résultat 
+      alert("Commentaire créé.");
+      
+      window.location.reload();
+    } else {
+      alert("Le commentaire n'as pu être créé. Veuillez rééssayer. ");
+    }
+
+  } catch (error) {
+    alert("Une erreur est survenue. Veullez rééssayer");
+  }    
+  };
+
+
   return (
     <>
       <Header />
@@ -39,29 +94,39 @@ const ArticlesPage = () => {
                   <article class="articlestyle">
                     <h2>{article.articlebody}</h2>
                         <h2>Les commentaires : </h2>
-                        {comments ? (
-                          <>
-                            {comments.map((comment) => {
-                              return (
-                                <article class="commentstyle">                            
-                                  <h2>{comment.content}</h2>
-                                  <h2>{comment.id}</h2>
-                                  <Link to={`/comments/create`}>Créer un commentaire</Link>
-                                </article>
-                              );
-                            })}
-                          </>
-                        ) : (
-                          <p>En cours de chargement</p>
-                        )}
+                            {comments ? (
+                               <div>                    
+                                 {comments                        
+                                    .filter((comment) => comment.ArticleId === article.id)
+                                    .map((comment) => (
+                                      <article key={comment.id}>                                                        
+                                        <p>l'adhérent : {comment.User.username}</p>
+                                        <p>a commenté : {comment.content}</p>                            
+                                      </article>
+                                    ))}                  
+                                </div>
+                            ) : (
+                              <p>En cours de chargement</p>
+                            )}
+
+                            <form onSubmit={(event) => handleCreateComment(event, article.id)}>                  
+                              <label >
+                                Commentez  : 
+                                <textarea  type="text" name="content" />
+                              </label>
+                              <input className="submitBtn" type="submit" />
+                            </form>
+
+
                   </article>
                 );
-              })}
-             
+              })}             
         </>
-      ) : (
-        <p>En cours de chargement</p>
-      )}
+         ) : (
+            <p>En cours de chargement</p>
+          )}
+
+
     </>
   );
 };
