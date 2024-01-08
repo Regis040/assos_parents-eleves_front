@@ -6,7 +6,7 @@ function Schools () {
         <h2>Les établissement scolaires</h2>
         <div class="container-schools" >            
             <div class="container-school">
-                <a href="#">
+                <a href="http://localhost:3001/maternelle">
                     <div class="img-container-school"><img class="img-container-school" src="../../assets/imgs/maternelle.jpg" alt="la maternelle" /></div>
                 </a> 
                     <h3>MATERNELLE</h3>

@@ -1,15 +1,11 @@
 import React, { useEffect, useState } from "react";
 import HeaderAdmin from "../../component/admin/HeaderAdmin";
-import { jwtDecode } from "jwt-decode";
 
 const AdminCommentsPage = () => {
    
   const [comments, setComments] = useState(null);
 
   
-  const token = localStorage.getItem("jwt");
-  const decodedToken = jwtDecode(token);
-
     
   useEffect(() => {
     (async () => {
@@ -42,13 +38,14 @@ const AdminCommentsPage = () => {
   return (
     <>
     <HeaderAdmin />
-      <h1>Liste des articles à commenter: </h1>
+      <h1>Les commentaires: </h1>
 
       {comments ? (
         <>
           {comments.map((comment) => {
             return (
               <article>
+              
                 <h2>{comment.content}</h2>               
                               
                   <button onClick={(event) => handleDeleteComment(event, comment.id)}>Supprimer</button>

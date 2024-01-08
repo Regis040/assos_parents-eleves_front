@@ -8,9 +8,7 @@ const CommentsPage = () => {
   useEffect(() => {
     (async () => {
       const commentsResponse = await fetch("http://localhost:3000/comments");
-
       const commentsResponseData = await commentsResponse.json();
-
       setComments(commentsResponseData);
     })();
   }, []);

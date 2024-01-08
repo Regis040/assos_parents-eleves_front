@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import Header from "../../component/guest/Header";
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const ArticleEachPage = () => {
   const { id } = useParams();
@@ -22,7 +23,12 @@ const ArticleEachPage = () => {
 
       {article ? (
         <article>
-          <h2>{article.data.articlebody}</h2>          
+          <h2>{article.data.articletitle}</h2> 
+          <h4>{article.data.articlebody}</h4>     
+
+          <Link to="/comments">Commentez</Link> 
+
+           
         </article>
       ) : (
         <p>En cours de chargement</p>

@@ -57,6 +57,7 @@ const AdminArticlesPage = () => {
                   <button onClick={(event) => handleDeleteArticle(event, article.id)}>Supprimer</button>
                 )}
                 <Link to={`/admin/articles/update/${article.id}`}>Mise à jour de l'article</Link>
+                
               </article>
             );
           })}

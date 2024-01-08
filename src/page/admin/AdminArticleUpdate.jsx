@@ -27,8 +27,6 @@ const AdminArticleUpdate = () => {
     const articlebody = event.target.articlebody.value;
    
   
-
-
     const articleUpdateData = {
       name: articletitle,
       sujet: articlebody,

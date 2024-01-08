@@ -11,7 +11,6 @@ const CommentEachPage = () => {
     (async () => {
       const commentResponse = await fetch("http://localhost:3000/comments/" + id);
       const commentResponseData = await commentResponse.json();
-
       setComment(commentResponseData);
     })();
   }, [id]);
