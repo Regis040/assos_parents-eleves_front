@@ -3,9 +3,7 @@ import HeaderAdmin from "../../component/admin/HeaderAdmin";
 
 const AdminCommentsPage = () => {
    
-  const [comments, setComments] = useState(null);
-
-  
+  const [comments, setComments] = useState(null);  
     
   useEffect(() => {
     (async () => {
@@ -18,21 +16,20 @@ const AdminCommentsPage = () => {
 
 
   const handleDeleteComment = async (event, commentId) => {
-   
-    const token = localStorage.getItem("jwt");
-    
-    await fetch("http://localhost:3000/comments/" + commentId, {
-        
-      method: "DELETE",
-    //   
-      headers: { Authorization: "Bearer " + token },
-    });
-    
-    const commentsResponse = await fetch("http://localhost:3000/comments");
-    const commentsResponseData = await commentsResponse.json();
-
-   
-    setComments(commentsResponseData);
+    try {
+      const token = localStorage.getItem("jwt");
+      await fetch(`http://localhost:3000/comments/${commentId}`, {
+        method: "DELETE",
+        headers: { Authorization: "Bearer " + token },
+      });
+  
+      const commentsResponse = await fetch("http://localhost:3000/comments");
+      const commentsResponseData = await commentsResponse.json();
+  
+      setComments(commentsResponseData);
+    } catch (error) {
+      console.error("Error deleting comment:", error);
+    }
   };
 
   return (
@@ -44,12 +41,9 @@ const AdminCommentsPage = () => {
         <>
           {comments.map((comment) => {
             return (
-              <article>
-              
-                <h2>{comment.content}</h2>               
-                              
-                  <button onClick={(event) => handleDeleteComment(event, comment.id)}>Supprimer</button>
-               
+              <article>              
+                <h2>{comment.content}</h2>     
+                <button onClick={(event) => handleDeleteComment(event, comment.id)}>Supprimer</button>
               </article>
             );
           })}

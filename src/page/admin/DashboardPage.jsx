@@ -2,18 +2,15 @@ import { useNavigate } from "react-router-dom";
 import HeaderAdmin from "../../component/admin/HeaderAdmin";
 import { useEffect } from "react";
 
-const DashboardPage = () => {
-       
-        const navigate = useNavigate();
-       
-        useEffect (() => {
-        
-        const token = localStorage.getItem("jwt");
+const DashboardPage = () => {       
+        const navigate = useNavigate();      
 
-        if (!token) {
-          navigate("/login");
-        }     
-});
+        useEffect (() => {        
+          const token = localStorage.getItem("jwt");
+          if (!token) {
+           navigate("/login");
+          }     
+        });
 
   return (
     <>

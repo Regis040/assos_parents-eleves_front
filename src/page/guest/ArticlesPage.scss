@@ -1,9 +1,30 @@
 .articlestyle {
-    background-color:aqua;
+    background-color:#56CBF2;
     width: 70%;
     margin: auto;
+    margin-top: 2rem;
+    border-radius: 5px;
+    box-shadow: 10px 10px 19px -7px rgba(0,0,0,0.64);
+-webkit-box-shadow: 10px 10px 19px -7px rgba(0,0,0,0.64);
+-moz-box-shadow: 10px 10px 19px -7px rgba(0,0,0,0.64);
 }
 
 .commentstyle {
-    background-color: antiquewhite;
+    background-color: #3B97EE;
+    width: 90%;
+    margin: auto;
+    border-radius: 10px;
+    border: 3px solid darkblue;
+
+}
+
+.sujetstyle {
+    background-color: #2F80ED;
+    border-radius: 10px;
+    padding: 1px;
+    color: white;
+}
+
+.h2style {
+    font-size: larger;    
 }

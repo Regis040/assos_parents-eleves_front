@@ -1,10 +1,9 @@
  @font-face {
-    font-family: "Roboto Regular";
+    font-family: "RobotoRegular";
     src: url(../public/assets/typo/Roboto/Roboto-Regular.ttf);    
 }
 
-
 body, header, footer {
-    font-family: 'Roboto Regular';
+    font-family: 'RobotoRegular';
 } 
 

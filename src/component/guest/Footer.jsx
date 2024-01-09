@@ -4,7 +4,7 @@ function Footer () {
     return (
        <footer>
             <p>Copyright</p>
-            <p>Nous contacter</p>
+            <p><a href="mailto:assos@email.com">Nous contacter</a></p>
        </footer>
     )
 }

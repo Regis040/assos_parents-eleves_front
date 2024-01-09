@@ -24,12 +24,11 @@ const AdminArticleUpdate = () => {
     event.preventDefault();
 
     const articletitle = event.target.articletitle.value;
-    const articlebody = event.target.articlebody.value;
-   
+    const articlebody = event.target.articlebody.value;   
   
     const articleUpdateData = {
-      name: articletitle,
-      sujet: articlebody,
+      articletitle: articletitle,
+      articlebody: articlebody,
     };
 
     const articleUpdateDataJson = JSON.stringify(articleUpdateData);
