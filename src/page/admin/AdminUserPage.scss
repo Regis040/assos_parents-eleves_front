@@ -1,0 +1,19 @@
+#loggerstyle {
+    width: 40%;
+    background-color:lightblue;
+    margin: auto;
+}
+
+#loggerstyle button {
+    background-color:#56CCF2;
+    position: relative;
+    left: 50%;    
+    transform: translateX(-50%);
+
+    cursor: pointer;
+  }
+
+  #loggerstyle button:hover {
+    background-color:#0082C8;
+    color: white;
+  }

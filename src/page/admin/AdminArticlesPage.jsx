@@ -7,7 +7,6 @@ const AdminArticlesPage = () => {
    
   const [articles, setArticles] = useState(null);
 const [comments, setComments] = useState(null);  
-
   
   const token = localStorage.getItem("jwt");
   const decodedToken = jwtDecode(token);
@@ -78,8 +77,10 @@ const [comments, setComments] = useState(null);
                     {decodedToken.data.role !==3 && (
                       <button onClick={(event) => handleDeleteArticle(event, article.id)}>Supprimer</button>
                     )}
-
-                    <Link to={`/admin/articles/update/${article.id}`}>Mise à jour de l'article</Link>   
+                    {decodedToken.data.role !==3 && (
+                      <Link to={`/admin/articles/update/${article.id}`}>Mise à jour de l'article</Link>  
+                    )}
+                     
                     
                         <h2>Les commentaires</h2>
                     {comments ? (
@@ -88,8 +89,11 @@ const [comments, setComments] = useState(null);
                                     .filter((comment) => comment.ArticleId === article.id)
                                     .map((comment) => (
                                       <article key={comment.id}>                                                        
-                                       <h2>{comment.content}</h2>     
-                             		<button onClick={(event) => handleDeleteComment(event, comment.id)}>Supprimer</button>                          
+                                        <h2>{comment.content}</h2>     
+                                        {decodedToken.data.role !==3 && (
+                                          <button onClick={(event) => handleDeleteComment(event, comment.id)}>Supprimer</button>    
+                                         )}
+                             	        	                      
                                       </article>
                                     ))}                  
                                 </div>

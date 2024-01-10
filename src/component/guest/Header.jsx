@@ -10,6 +10,7 @@ const Header = () => {
         <div id="loginarea">
           <ul>
             <li><Link to="https://www.facebook.com/aucoeurdelenfance40"><img className="logo-facebook" src="../../assets/imgs/facebook.png" alt="facebook" /></Link></li>
+            <li><Link to="/register">Nous rejoindre</Link></li>
             <li><Link to="/login">se connecter</Link></li>
           </ul>
         </div>

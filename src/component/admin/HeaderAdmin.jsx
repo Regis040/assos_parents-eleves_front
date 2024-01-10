@@ -27,6 +27,9 @@ const HeaderAdmin = () => {
           <li>
             <Link to="/admin/articles/create">Créer un article</Link>
           </li>
+          <li>
+            <Link to="/admin/users">Gérer les adhérents</Link>
+          </li>
         </ul>
         <button onClick={handleLogout}>Se déconnecter</button>
       </nav>

@@ -1,10 +1,14 @@
 import { useState } from "react";
 import HeaderAdmin from "../../component/admin/HeaderAdmin";
 import { useVerifyIfUserIsLogged } from "../../utilis/security-utilis";
+import { jwtDecode } from "jwt-decode";
 
 const AdminArticleCreate = () => {
 
     useVerifyIfUserIsLogged();
+
+    const token = localStorage.getItem("jwt");
+    const decodedToken = jwtDecode(token);
   
     const [message, setMessage] = useState(null);
 
@@ -41,9 +45,8 @@ const AdminArticleCreate = () => {
           } else {
             setMessage("Erreur !")
           }
-
-
     }
+
     return (
             <>
                  <HeaderAdmin />
@@ -58,7 +61,9 @@ const AdminArticleCreate = () => {
                             <label htmlFor="articlebody">Contenu de l'article:</label>
                             <textarea id="articlebody" name="articlebody" rows="5" required></textarea>
                         </div>
-                        <button type="submit">Soumettre l'article</button>
+                        {decodedToken.data.role !== 3 && (
+                            <button type="submit">Soumettre l'article</button>              
+                        )}                        
                 </form>
             </>
     )
