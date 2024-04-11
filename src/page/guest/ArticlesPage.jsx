@@ -68,11 +68,11 @@ const ArticlesPage = () => {
       alert("Commentaire créé.");      
       window.location.reload();
     } else {
-      alert("Le commentaire n'as pu être créé. Veuillez rééssayer. ");
+      alert("Le commentaire n'as pu être créé. Etes-vous connecté ?. ");
     }
 
     } catch (error) {
-      alert("Une erreur est survenue. Veullez rééssayer");
+      alert("Une erreur est survenue. Etes-vous connecté ?");
     }    
     };
 
@@ -106,6 +106,7 @@ const ArticlesPage = () => {
 
                             <form onSubmit={(event) => handleCreateComment(event, article.id)}>                  
                               <label >
+                                Réservé aux adhérents....
                                 Commentez  : 
                                 <textarea  type="text" name="content" />
                               </label>
@@ -113,9 +114,9 @@ const ArticlesPage = () => {
                             </form>
                   </article>
                 );
-              })}             
-        </>
-         ) : (
+              })}         
+            </>
+          ) : (
             <p>En cours de chargement</p>
           )}
 

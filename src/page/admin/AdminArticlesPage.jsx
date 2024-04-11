@@ -6,11 +6,10 @@ import { Link } from "react-router-dom";
 const AdminArticlesPage = () => {
    
   const [articles, setArticles] = useState(null);
-const [comments, setComments] = useState(null);  
+  const [comments, setComments] = useState(null);  
   
   const token = localStorage.getItem("jwt");
   const decodedToken = jwtDecode(token);
-
     
   useEffect(() => {
     (async () => {
@@ -92,8 +91,7 @@ const [comments, setComments] = useState(null);
                                         <h2>{comment.content}</h2>     
                                         {decodedToken.data.role !==3 && (
                                           <button onClick={(event) => handleDeleteComment(event, comment.id)}>Supprimer</button>    
-                                         )}
-                             	        	                      
+                                         )}                             	        	                      
                                       </article>
                                     ))}                  
                                 </div>

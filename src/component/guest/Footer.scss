@@ -1,9 +1,77 @@
 footer {
-    background-color:#53C7F2;
-    height: 100px;
+    background-color:#8C6384;
+    height: 200px;    
 }
 
-p {
-    text-align: center;
-    font-size: larger;
+// la partie contact : réseaux sociaux, logo et contact
+#footer_contact {
+    display: flex;
+    justify-content: space-around;
 }
+            // La partie réseaux sociaux
+#socialmedias_gl{
+    margin-top: 1.5rem;
+}
+
+#socialmedias_in{
+    display: flex;  
+    justify-content: space-around;  
+}
+#socialmedia_title{
+    font-size: 22px;
+    margin-bottom: 5px;
+    
+}
+#facebook{
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+}
+#facebook_pic{
+    height: 40px;
+    width: 40px;
+}
+#twitter{
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+}
+#twitter_pic{
+    height: 30px;
+    width: 30px;
+}
+
+
+// La partie logo
+// #logofooter {
+//     height: 170 px;   
+//     text-align: center;
+// }
+
+
+// la partie contact
+#address {
+    margin-top: 1.5rem;
+}
+#contact_title{
+    font-size: 22px;
+    margin-bottom: 2px;
+}
+.address_text{
+    font-size: 12px;
+    text-align: left;
+}
+
+// la partie légale
+#footer_legal {
+    display: flex;
+    justify-content:center;
+    margin-top: 1rem;
+}
+
+.legal_mentions {
+    padding-right: 10px;
+}
+
+
+

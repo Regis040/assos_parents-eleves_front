@@ -1,30 +1,33 @@
 import { Link } from "react-router-dom";
-import '../../App.css';
+// import '../../App.css';
 import "./Header.scss";
 
 
 const Header = () => {
   return (
-    <>
-      <header>
-        <div id="loginarea">
-          <ul>
-            <li><Link to="https://www.facebook.com/aucoeurdelenfance40"><img className="logo-facebook" src="../../assets/imgs/facebook.png" alt="facebook" /></Link></li>
-            <li><Link to="/register">Nous rejoindre</Link></li>
-            <li><Link to="/login">se connecter</Link></li>
+    <>      
+        <div id="headerstyle">
+          <div id="logoheader">
+            <img id="logo" src="../../assets/imgs/logo.png" alt="le logo" />
+          </div>
+          <ul id="navheader">                       
+          <Link to="/"><li>Accueil</li></Link>
+            <li>|</li>
+            <Link to="/"><li>Actualités</li></Link>
+            <li>|</li>
+            <Link to="/"><li>Les établissements</li></Link>
+            <li>|</li>
+            <Link to="/aboutus"><li>A propos de nous</li></Link>
+            <li>|</li>
+            <Link to="/register"><li>S'inscrire</li></Link>
+            <li>|</li>
+            <Link to="/login"><li>Se connecter</li></Link>
           </ul>
         </div>
-        <nav id="navheader">
-          <img className="logo" src="../../assets/imgs/logo.png" alt="le logo" />
-            <ul class="ulresponsive">
-              <li><Link to="/">Accueil</Link></li>
-              <li><Link to="#liennewshome">Actualités</Link></li>
-              <li><Link to="/#lienchools">Les établissements</Link></li>
-              <li><Link to="/aboutus">A propos de nous</Link></li>
-            </ul>
-        </nav>
-          <h1>AU COEUR DE L'ENFANCE</h1>
-      </header>
+        <div className="titleone">
+            <h2>Association de parents d'élèves</h2>
+            <h1>AU COEUR DE L'ENFANCE</h1>
+        </div>
     </> 
   );
 };

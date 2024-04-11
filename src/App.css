@@ -7,3 +7,6 @@ body, header, footer {
     font-family: 'RobotoRegular';
 } 
 
+a {
+    text-decoration: none; 
+}

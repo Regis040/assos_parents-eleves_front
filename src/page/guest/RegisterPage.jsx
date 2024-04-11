@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../../component/guest/Header";
 import Footer from "../../component/guest/Footer";
-// import './RegisterPage.scss'
+import './RegisterPage.scss'
 
 const RegisterPage = () => {
 
@@ -51,7 +51,7 @@ console.log(registerDataJson)
         <section>
             <h2>Bienvenue</h2>
           {message && <p>{message}</p>}
-          <form onSubmit={handleRegistration}>
+          <form onSubmit={handleRegistration} className="formpositionregister">
                 <label>
                     <input placeholder="Votre nom d'utilisateur" type="text" name="username" />
                 </label>

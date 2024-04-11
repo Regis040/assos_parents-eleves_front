@@ -11,7 +11,6 @@ const AdminArticleCreate = () => {
     const decodedToken = jwtDecode(token);
   
     const [message, setMessage] = useState(null);
-
   
     const handleCreateArticle = async (event) => {
   
@@ -24,12 +23,10 @@ const AdminArticleCreate = () => {
           articletitle: articletitle,
           articlebody: articlebody,
           };
-
       
           const articleToCreateJson = JSON.stringify(articleToCreate);
 
           const token = localStorage.getItem("jwt");
-
 
           const createArticleResponse = await fetch("http://localhost:3000/articles", {
             method: "POST",
@@ -61,7 +58,7 @@ const AdminArticleCreate = () => {
                             <label htmlFor="articlebody">Contenu de l'article:</label>
                             <textarea id="articlebody" name="articlebody" rows="5" required></textarea>
                         </div>
-                        {decodedToken.data.role !== 3 && (
+                        {decodedToken.data.role !== 1 && (
                             <button type="submit">Soumettre l'article</button>              
                         )}                        
                 </form>

@@ -33,6 +33,7 @@ function App() {
             <Route path="/comment/details/:id" element={<CommentEachPage/>} />          
             <Route path="/comments" element={<CommentsPage />} />
             <Route path="/comments/create" element={< CommentCreate />} />
+            
 
              {/* login/enregistrement */}
             <Route path="/login" element={<LoginPage/>} />

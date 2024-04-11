@@ -1,134 +1,189 @@
+
+// @import '../../sass/variables';
+// @import '../../sass/typo';
+
 @font-face {
   font-family: "RobotoRegular";
   src: url(../../../public/assets/typo/Roboto/Roboto-Regular.ttf);    
 }
 
-
-
-header {
-    background-color:#44A9F0;
-    height: 300px;
-    width: 75%;
-    margin: auto;
-    border-radius: 5px;
-    font-family: 'RobotoRegular';
+#headerstyle {
+  display: flex;
+  justify-content:space-between;  
+  height: 100px;
 }
 
-
-.logo {
-    width: 150px;
-    position: relative;
-    top: 1rem;
-    left: 1rem;
-    border-radius: 50%;
-}
-
-
-// la navigation normale vers les différentes pages
 #navheader {
-   display: flex; 
-   justify-content: space-between;
+   display: flex;    
+   justify-content:space-between;
+   height: 75px;
+   padding-top: 2rem;
 }
 
-#navheader ul {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 50px;
-  }
-  
-  header a {
-    text-decoration: none; 
-}
-
-
-  
-   #navheader ul li { 
+li { 
     list-style: none;
     margin-right: 2rem;
-    border-radius: 10px;;
-    border: 2px solid darkblue;
-    cursor: pointer;
-    padding:5px;
-    height: 25px;
-    background-color: #3184EE;
-    color: white;
-    box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
--webkit-box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
--moz-box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
-  }
-  
-  #navheader ul li:hover {
-    background-color:#56CCF2;
     color: black;
-  }
+}
+
+#logo {
+    width: 220px;  
+    height: 75px;
+}
+
+#logoheader {
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+// Le titre 1 et l'image de fond
+
+.titleone {
+  height: 430px;
+  background-image: url("../../../public/assets/imgs/background.jpg");
+  background-size:cover;
+  background-position: center;
+  opacity: 0.6;
+}
+
+.titleone h1 {
+  color: #8C6384;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.titleone h2 {
+  color:#8C6384;
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 4rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
 
 
-  h1 {
-    display: block;
-    text-align: center;
-    padding-bottom: 1rem;
-  }
-
-  // Lien vers la page du login
-
-  #loginarea {
-    background-color: #0082c8;
-    margin-bottom: 0;
-    height: 50px;
-  }
-
-  #loginarea ul {
-    display: flex;  
-    justify-content: end;
-  }
-
-  #loginarea ul li {
-    list-style: none;
-    border: 2px solid white;
-    padding: 5px;
-    margin-right: 1rem;
-    text-align: center;
-    box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
-    -moz-box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
-  }
-
-  .logo-facebook {
-    height: 30px; 
-   background-color: #3083ED;
-  }
 
 
-@media screen and (max-width: 500px) {
-      body {
-        margin: 0;
-      }
-      header {
-            height: 350px;
-            width: 100%;
-            margin: auto;
-      }
 
-      .logo {
-        width: 100px;
-        position: relative;
-        border-radius: 50%;
-      }
 
-      #navheader ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        justify-items: center;
-        margin-top: 3px;
-      }
+// .logoheader {
+//     width: 150px;
+//     position: relative;
+//     top: 1rem;
+//     left: 1rem;
+//     border-radius: 50%;
+// }
 
-      h1 {
-        display: block;
-        text-align: center;
-        font-size: 25px;
-      }
 
-    }
+// // la navigation normale vers les différentes pages
+// #navheader {
+//    display: flex; 
+//    justify-content: space-between;
+// }
+
+// #navheader ul {
+//     display: flex;
+//     justify-content: center;
+//     justify-items: center;
+//     margin-top: 50px;
+//   }
+  
+//   header a {
+//     text-decoration: none; 
+// }
+
+
+  
+//    #navheader ul li { 
+//     list-style: none;
+//     margin-right: 2rem;
+//     border-radius: 10px;;
+//     border: 2px solid darkblue;
+//     cursor: pointer;
+//     padding:5px;
+//     height: 25px;
+//     background-color: #3184EE;
+//     color: white;
+//     box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
+// -webkit-box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
+// -moz-box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
+//   }
+  
+//   #navheader ul li:hover {
+//     background-color:#56CCF2;
+//     color: black;
+//   }
+
+
+
+//   h1 {
+//     display: block;
+//     text-align: center;
+//     padding-bottom: 1rem;
+//   }
+
+//   // Lien vers la page du login
+
+//   #loginarea {
+//     background-color: #0082c8;
+//     margin-bottom: 0;
+//     height: 50px;
+//   }
+
+//   #loginarea ul {
+//     display: flex;  
+//     justify-content: end;
+//   }
+
+//   #loginarea ul li {
+//     list-style: none;
+//     border: 2px solid white;
+//     padding: 5px;
+//     margin-right: 1rem;
+//     text-align: center;
+//     box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
+//     -webkit-box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
+//     -moz-box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
+//   }
+
+//   .logo-facebook {
+//     height: 30px; 
+//    background-color: #3083ED;
+//   }
+
+
+// @media screen and (max-width: 500px) {
+//       body {
+//         margin: 0;
+//       }
+//       header {
+//             height: 350px;
+//             width: 100%;
+//             margin: auto;
+//       }
+
+//       .logo {
+//         width: 100px;
+//         position: relative;
+//         border-radius: 50%;
+//       }
+
+//       #navheader ul {
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: center;
+//         justify-items: center;
+//         margin-top: 3px;
+//       }
+
+//       h1 {
+//         display: block;
+//         text-align: center;
+//         font-size: 25px;
+//       }
+
+//     }
