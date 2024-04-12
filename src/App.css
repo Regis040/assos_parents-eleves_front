@@ -5,6 +5,7 @@
 
 body, header, footer {
     font-family: 'RobotoRegular';
+    margin: 0;
 } 
 
 a {
