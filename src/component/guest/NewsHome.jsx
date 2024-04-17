@@ -30,7 +30,7 @@ function NewsHome () {
                     <div class="bloc_content">
                         <h3>Le débat sur l'actualité</h3>
                         <p>Un débat sur l'actualité: adhérents, n'hésitez pas à commenter puis nous en discuterons autour d'un chocolat et des biscuits !</p>
-                        <div class="bloc_button-position"><a href="#" class="bloc_button">en savoir +</a></div>
+                        <div class="bloc_button-position"><a href="/articles" class="bloc_button">en savoir +</a></div>
                     </div>                    
                 </div>     
             </div>

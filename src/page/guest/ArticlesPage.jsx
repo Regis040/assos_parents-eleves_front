@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../component/guest/Header";
 import { useParams } from "react-router-dom";
-
 import "./ArticlesPage.scss";
+import './Form.scss';
 
 const ArticlesPage = () => {
   const [articles, setArticles] = useState(null);
@@ -80,17 +80,19 @@ const ArticlesPage = () => {
   return (
     <>
       <Header />
-        <div class="articlestyle"> </div>
-          <h2>Les sujets du mois : </h2>
-          {articles ? (
-            <>
-              {articles.map((article) => {
-                return (
-                  <article class="articlestyle">
-                    <h2 class="sujetstyle">{article.articlebody}</h2>
-                        <h2 class="h2style">Les commentaires : </h2>
+          <div> 
+              <div class="soustitre">
+                  <h2>Les sujets du mois</h2>
+              </div>
+              {articles ? (
+                <>
+                  {articles.map((article) => {
+                   return (
+                       <article class="articlestyle">
+                          <h2 class="sujetstyle">{article.articlebody}</h2>
+                          <h2 class="h2style">Les commentaires : </h2>
                             {comments ? (
-                               <div class="commentstyle">                    
+                               <div className="commentstyle">                    
                                  {comments                        
                                     .filter((comment) => comment.ArticleId === article.id)
                                     .map((comment) => (
@@ -104,11 +106,13 @@ const ArticlesPage = () => {
                               <p>En cours de chargement</p>
                             )}
 
+                            {comments && comments.filter((comment) => comment.ArticleId === article.id).length === 0 && (
+    <p className="commentstyle">Soyez le premier à commentez ce sujet</p>
+  )}
+
                             <form onSubmit={(event) => handleCreateComment(event, article.id)}>                  
-                              <label >
-                                Réservé aux adhérents....
-                                Commentez  : 
-                                <textarea  type="text" name="content" />
+                              <label >                               
+                                <textarea placeholder="Vos commentaires" type="text" name="content" />
                               </label>
                               <input className="submitBtn" type="submit" />
                             </form>
@@ -119,8 +123,8 @@ const ArticlesPage = () => {
           ) : (
             <p>En cours de chargement</p>
           )}
-
-
+        
+         </div>
     </>
   );
 };

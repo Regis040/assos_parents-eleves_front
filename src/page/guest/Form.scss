@@ -1,0 +1,57 @@
+
+@import '../../sass/variables';
+@import '../../sass/typo';
+
+form {
+    background-color: $formbgcolor;
+    border-radius: 30px;
+    width: 320px;
+  }
+form h3{
+  width: 100%;
+  background-color:#DDCEDA ;
+  border-radius: 20px;
+  padding: 1rem 0;
+  text-align: center;
+  color: #8C6384;
+}
+label {
+  display: block;
+  font-weight: bold;
+  margin-left: 1rem;
+  margin-right: 2rem;
+  padding: 5px
+}
+
+input {
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+}
+
+
+#gender_kid, #etablishment{
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 10px;
+  margin-left: 20px;
+  // margin-right: 2rem;
+}
+input[type="submit"] {
+  background-color: #DDCEDA;
+  color:#8C6384;
+  width: 100px;
+  padding: 15px 0px;
+  border-radius: 50px;
+   cursor: pointer;
+  // font-size: 16px;
+  border: 2px solid #8C6384;
+  position: relative;
+  left: 200px;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(44, 44, 136);
+}

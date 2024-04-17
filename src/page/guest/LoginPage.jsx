@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Header from "../../component/guest/Header";
+import Footer from "../../component/guest/Footer";
 import './LoginPage.scss';
+import './Form.scss';
 
 const LoginPage = () => {
   const [message, setMessage] = useState(null);
@@ -8,11 +11,8 @@ const LoginPage = () => {
 
   const handleLogin = async (event) => {
     event.preventDefault();
-
-
     const username = event.target.username.value;
     const password = event.target.password.value;
-
     const loginData = {
       username,
       password,
@@ -41,20 +41,26 @@ const LoginPage = () => {
   };
 
   return (
+    <>
+    <Header />
     <section>
+      <div class="soustitre">
+                <h2>Formulaire de connection à votre compte d'utilisateur</h2>
+      </div>
       {message && <p>{message}</p>}
       <form onSubmit={handleLogin} className="formposition">
+        <h3>Veuillez vous connecter</h3>
         <label for="username">
-          Nom d'utilisateur :
-          <input type="text" name="username" id="username" required/>
+          <input placeholder="Votre nom d'utilisateur" type="text" name="username" id="username" required/>
         </label>
         <label>
-          Mot de passe:
-          <input type="password" name="password" id="password" required />
+          <input placeholder="Votre mot de passe " type="password" name="password" id="password" required />
         </label>
             <input type="submit" value="login"/>
       </form>
     </section>
+    <Footer />
+    </>
   );
 };
 

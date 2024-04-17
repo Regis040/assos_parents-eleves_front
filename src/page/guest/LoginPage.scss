@@ -3,50 +3,6 @@
 @import '../../sass/typo';
 
 .formposition {    
-    background-color: $formbgcolor;
-    margin: 0;
-    padding: 1rem;
-    // position: relative;
-    // top: 50px;
-    // left: 200px;  
     margin: auto;
-    margin-top: 2rem;
   }
 
-
-form {
-    background-color: $formbgcolor;
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-    box-shadow: 8px 14px 25px -12px rgba(54,94,201,0.75);
--webkit-box-shadow: 8px 14px 25px -12px rgba(54,94,201,0.75);
--moz-box-shadow: 8px 14px 25px -12px rgba(54,94,201,0.75);
-  }
-
-  label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-  }
-
-  input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-  }
-
-  input[type="submit"] {
-    background-color: rgb(78, 78, 173);
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-
-  input[type="submit"]:hover {
-    background-color: rgb(44, 44, 136);
-  }
