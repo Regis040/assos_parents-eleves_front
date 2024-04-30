@@ -34,18 +34,20 @@ const AdminUserPage = () => {
     return (
         <>
             <HeaderAdmin />
-            <h2>Liste des adhérents</h2>
+            <div className="soustitre">
+                 <h2>Vous êtes connecté en tant qu'admin : gérer les adhérents </h2>
+            </div>
             {users?(
                 <>
                     {users.map((user) => {
                         return (
                             <div>
-                            <article id="loggerstyle">
-                                 <h2>{user.username}</h2>                                 
-                                    {decodedToken.data.role !== 3 && (
+                                <article id="loggerstyle">
+                                     <div class="memberStyleAdmin">{user.username}</div>                                 
+                                        {decodedToken.data.role !== 3 && (
                                          <button onClick={(event) => handleDeleteUser(event, user.id)}>Supprimer</button>                                   
-                                    )}
-                            </article>
+                                        )}
+                                </article>
                             </div>
                         );
                     }

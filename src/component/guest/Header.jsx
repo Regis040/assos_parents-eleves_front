@@ -1,8 +1,20 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate} from "react-router-dom";
 import "./Header.scss";
 
 
 const Header = () => {
+
+  const token = localStorage.getItem("jwt");
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    // Je dégage le token du local storage
+    localStorage.removeItem("jwt");
+
+    // // je redirige l'utilisateur vers la page de login
+    // navigate("/login");
+  };
+
   return (
     <>      
         <div id="headerstyle">
@@ -10,17 +22,17 @@ const Header = () => {
             <img id="logo" src="../../assets/imgs/logo.png" alt="le logo" />
           </div>
           <ul id="navheader">                       
-          <Link to="/"><li>Accueil</li></Link>
+          <li><Link to="/">Accueil</Link></li>
             <li>|</li>
-            <Link to="/"><li>Actualités</li></Link>
+            <li><Link to="/">Actualités</Link></li>
             <li>|</li>
-            <Link to="/"><li>Les établissements</li></Link>
+            <li><Link to="/">Les établissements</Link></li>
             <li>|</li>
-            <Link to="/aboutus"><li>A propos de nous</li></Link>
+            <li><Link to="/aboutus">A propos de nous</Link></li>
             <li>|</li>
-            <Link to="/register"><li>S'inscrire</li></Link>
+            <li><Link to="/register">S'inscrire</Link></li>
             <li>|</li>
-            <Link to="/login"><li>Se connecter</li></Link>
+            <li><Link to="/login">Se connecter</Link></li>
           </ul>
         </div>
         <div className="titleone">

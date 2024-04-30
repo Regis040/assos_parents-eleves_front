@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import HeaderAdmin from "../../component/admin/HeaderAdmin";
 import './AdminArticlesPage.scss';
+import './AdminArticleUpdate.scss';
 
 const AdminArticleUpdate = () => {
    
@@ -45,7 +46,7 @@ const AdminArticleUpdate = () => {
     });
 
     if (updateArticleResponse.status === 201) {
-      setMessage("Mise à jour OK");
+      setMessage("Mise à jour éffectuée");
     } else {
       setMessage("Erreur");
     }
@@ -53,29 +54,30 @@ const AdminArticleUpdate = () => {
 
   return (
     <>
-    <HeaderAdmin />
-    <div>
-  
-    <>{message && <p>{message}</p>}</>
-      {article && (
-        <form onSubmit={handleUpdateArticle}>
-          <div>
-            <label>
-              Nom :
-              <input type="text" name="articletitle" defaultValue={article.articletitle} />
-            </label>
-          </div>
-          <div>
-            <label>
-              le sujet :
-              <input type="text" name="articlebody" defaultValue={article.articlebody} />
-            </label>
-          </div>   
-
-          <input type="submit" />
-        </form>
-      )}
-    </div>
+      <HeaderAdmin />
+      <div className="soustitre">
+        <h2>Vous êtes connecté en tant qu'admin : Mettre à jour le sujet sélectionné </h2>
+      </div>
+      <div>  
+          <>{message && <p>{message}</p>}</>
+          {article && (
+            <form className="updateFormPosition" onSubmit={handleUpdateArticle}>
+             <div>
+               <label>
+                  Nom : 
+                  <input type="text" name="articletitle" defaultValue={article.articletitle} />
+               </label>
+              </div>
+              <div>
+                <label>
+                  le sujet :
+                  <textarea type="text" id="subjectSize" name="articlebody" defaultValue={article.articlebody} />
+                 </label>
+              </div> 
+              <input type="submit" />
+            </form>
+          )}
+      </div>
     </>
   );
 };

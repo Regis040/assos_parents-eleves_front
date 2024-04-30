@@ -1,19 +1,31 @@
 #loggerstyle {
-    width: 40%;
-    background-color:lightblue;
+    width: 200px;
+    height: 150px;
+    background-color:#D7FEAD;
     margin: auto;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+.memberStyleAdmin{
+  background-color: #DDCEDA;
+  text-align: center;
+  padding: 10px 1px;
+  border-radius: 20px;
+  margin-bottom: 50px;
 }
 
 #loggerstyle button {
-    background-color:#56CCF2;
+    background-color:#DDCEDA;
     position: relative;
     left: 50%;    
     transform: translateX(-50%);
-
     cursor: pointer;
+    border: none;
+    padding: 15px 10px;
+    border-radius: 20px;
   }
 
   #loggerstyle button:hover {
-    background-color:#0082C8;
+    background-color:#8C6384;
     color: white;
   }

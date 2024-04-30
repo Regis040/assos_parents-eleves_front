@@ -97,8 +97,10 @@ const ArticlesPage = () => {
                                     .filter((comment) => comment.ArticleId === article.id)
                                     .map((comment) => (
                                       <article key={comment.id}>                                                        
-                                        <p>l'adhérent : {comment.User.username}</p>
-                                        <p>a commenté : {comment.content}</p>                            
+                                        <div className="commentPosition">
+                                            <div>{comment.User.username} a commenté : </div>
+                                            <div className="commentUnderline">{comment.content}</div>
+                                        </div>                            
                                       </article>
                                     ))}                  
                                 </div>
@@ -107,12 +109,12 @@ const ArticlesPage = () => {
                             )}
 
                             {comments && comments.filter((comment) => comment.ArticleId === article.id).length === 0 && (
-    <p className="commentstyle">Soyez le premier à commentez ce sujet</p>
-  )}
+                                  <h4 >Soyez le premier à commentez ce sujet</h4>
+                            )}
 
-                            <form onSubmit={(event) => handleCreateComment(event, article.id)}>                  
+                            <form className="formCommentPosition" onSubmit={(event) => handleCreateComment(event, article.id)}>                  
                               <label >                               
-                                <textarea placeholder="Vos commentaires" type="text" name="content" />
+                                <textarea placeholder="Rédigez votre commentaire" type="text" name="content" />
                               </label>
                               <input className="submitBtn" type="submit" />
                             </form>

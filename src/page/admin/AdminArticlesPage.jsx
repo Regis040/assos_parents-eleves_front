@@ -28,8 +28,6 @@ const AdminArticlesPage = () => {
     })();
   }, []);
 
-
-
   const handleDeleteArticle = async (event, articleId) => {   
     const token = localStorage.getItem("jwt");    
     await fetch("http://localhost:3000/articles/" + articleId, {        
@@ -63,41 +61,45 @@ const AdminArticlesPage = () => {
   return (
     <>
     <HeaderAdmin />
-      <h1>Liste des articles : </h1>
+      <div className="soustitre">
+        <h2>Vous êtes connecté en tant qu'admin : gérer les sujets et leurs commentaires </h2>
+      </div>
+      
 
       {articles ? (
         <>
           {articles.map((article) => {
             return (
                 <article class="articlesdesign">
-                    <h2>{article.articletitle}</h2>
-                    <h4>{article.articlebody}</h4>                
-                  
-                    {decodedToken.data.role !==3 && (
-                      <button onClick={(event) => handleDeleteArticle(event, article.id)}>Supprimer</button>
-                    )}
-                    {decodedToken.data.role !==3 && (
-                      <Link to={`/admin/articles/update/${article.id}`}>Mise à jour de l'article</Link>  
-                    )}
-                     
                     
-                        <h2>Les commentaires</h2>
-                    {comments ? (
-                               <div class="commentstyle">                    
+                    <h2 className="subjetsStyle">{article.articlebody}</h2>  
+                     {decodedToken.data.role !==3 && (
+                        <button onClick={(event) => handleDeleteArticle(event, article.id)}>Supprimer ce sujet</button>
+                     )}
+                     {decodedToken.data.role !==3 && (
+                       <Link to={`/admin/articles/update/${article.id}`}>Mettre à jour ce sujet</Link>  
+                     )}
+
+                                  
+                        <h3 className="commentStyleTitle">- LES COMMENTAIRES -</h3>
+                         {comments ? (
+                               <div>                    
                                  {comments                        
                                     .filter((comment) => comment.ArticleId === article.id)
                                     .map((comment) => (
                                       <article key={comment.id}>                                                        
-                                        <h2>{comment.content}</h2>     
+                                        <h4  class="commentstyle">{comment.content}</h4>     
                                         {decodedToken.data.role !==3 && (
-                                          <button onClick={(event) => handleDeleteComment(event, comment.id)}>Supprimer</button>    
+                                          <button onClick={(event) => handleDeleteComment(event, comment.id)}>Supprimer ce commentaire</button>    
                                          )}                             	        	                      
                                       </article>
                                     ))}                  
                                 </div>
                             ) : (
                               <p>En cours de chargement</p>
-                            )}  
+                            )} 
+                       
+
                 </article>
             );
           })}

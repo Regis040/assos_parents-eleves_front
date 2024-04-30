@@ -30,7 +30,6 @@ input {
   border-radius: 10px;
 }
 
-
 #gender_kid, #etablishment{
   width: 80%;
   padding: 8px;
@@ -53,5 +52,6 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: rgb(44, 44, 136);
+  background-color: #8C6384;
+  color: white;
 }

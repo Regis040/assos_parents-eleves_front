@@ -14,7 +14,7 @@ function NewsHome () {
                     <div class="bloc_content">
                         <h3>La lutte contre le harcelement</h3>
                         <p>La prévention et la lutte contre le harcèlement entre élèves est l'une des priorités du ministère de l'Education nationale et de la Jeunesse.</p>
-                        <div class="bloc_button-position"><a href="#" class="bloc_button">en savoir +</a></div>
+                        <div class="bloc_button-position"><a href="/harcellement" class="bloc_button">en savoir +</a></div>
                     </div>                    
                 </div>    
                 <div class="bloc">

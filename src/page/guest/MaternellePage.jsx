@@ -3,42 +3,33 @@ import Header from "../../component/guest/Header";
 import Footer from "../../component/guest/Footer";
 import './MaternellePage.scss';
 
-const AboutUsPage = () => {
+const MaternellePage = () => {
   return (
     <>
-      <Header />
-      <div class="containers" id="liennewshome">
-                <div class="container">
-                    <div class="img-container"><img  src="../../assets/imgs/coeur.webp" alt="un coeur" /></div>
-                    <div class="content">
-                        <h3>La maternelle: une rentrée en douceur</h3>
-                        <p>Une prémière rentrée en maternelle sans pleurs  ni inquiètudes, 
-                        c'est le souhait de beacoup de parents. Certains enfants, discrets ou ...</p>
-                    </div>
-                    <div class="button-position"><a href="#" class="button">En savoir +</a></div>
-                </div>
-                <div class="container">
-                <div class="img-container"><img  src="../../assets/imgs/maternelleacceuil.webp" alt="l'accueil à la maternelle" /></div>
-                    <div class="content">
-                      <h3>Comment aider votre enfant pour son entrée en maternelle</h3>
-                        <p>L'enrée en petite section ouvre la porte d'un monde inconnu pour les tout-petits comme pour
-                        les parents. Pour favoriser les ...</p>
-                    </div>
-                    <div class="button-position"><a href="#" class="button">En savoir +</a></div>
-                </div>
-                <div class="container">
-                <div class="img-container"><img  src="../../assets/imgs/accident.jpg" alt="prévention des accidents" /></div>
-                    <div class="content">
-                    <h3>Prévenir les accidents de la vie courante</h3>
-                        <p>Protéger les touts-petits va de soi, mais nous avons parfois tendance à 
-                        baisser la garde quand les enfants grandissent. Entre laxisme et ...</p>
-                    </div>
-                    <div class="button-position"><a href="/articles" class="button">En savoir +</a></div>
-                </div>
-            </div>
+      <Header />      
+          <div className="soustitre">
+                <h2>La maternelle</h2>
+          </div>
+
+          <div className="maternellePic">Photo</div>
+          <div className="maternellePhotoTitle">titre de la photo</div>
+          <div className="maternelleParagraphIntro">Texte sous la photo</div>
+
+          <div className="sujetstyle">
+            <h3>L’école, une expérience totalement nouvelle</h3>
+          </div>
+          <div className="sujetstyle">
+            <h3>Reconnaitre et apprivoiser les lieux</h3>
+          </div>
+          <div className="sujetstyle">
+            <h3>Verbaliser, expliquer les règles et les spécificités de l'école</h3>
+          </div>
+          <div className="sujetstyle">
+            <h3>Et l'enfant particulièrement anxieux ?</h3>
+          </div>
       <Footer />
     </>
   );
 };
 
-export default AboutUsPage;
+export default MaternellePage;

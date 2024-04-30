@@ -10,6 +10,7 @@
 #headerstyle {
   display: flex;
   justify-content:space-between;  
+  align-items: center;
   height: 100px;
 }
 
@@ -20,10 +21,38 @@
    padding-top: 2rem;
 }
 
-li { 
+// #navheader ul {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   height: 100%;
+// }
+
+#navheader li { 
     list-style: none;
+    text-decoration: none;
     margin-right: 2rem;
-    color: black;
+    margin-top: 1rem;
+    color: #8C6384;
+}
+#navheader li  a { 
+  position: relative;
+}
+
+#navheader li a::before {
+  content: ''; /* Ajoute un contenu vide pour les pseudo-éléments */
+  position: absolute; /* Position absolue pour positionner la barre */
+  bottom: 0%; /* Aligner le bas de la barre avec le bas du lien */
+  left: 50%; /* Commencer du centre */
+  width: 0; /* Largeur initiale nulle */
+  height: 2px; /* Hauteur de la barre */
+  background-color: #8C6384; /* Couleur de la barre */
+  transition: width 0.3s ease-out, left 0.3s ease-out; /* Animation de la largeur et de la position */
+}
+
+#navheader li a:hover::before {
+  width: 100%; /* Augmenter la largeur de la barre au survol */
+  left: 0; /* Déplacer la barre vers la gauche pour partir des extérieurs */
 }
 
 #logo {
@@ -60,6 +89,7 @@ li {
   padding-top: 4rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
 
 
 

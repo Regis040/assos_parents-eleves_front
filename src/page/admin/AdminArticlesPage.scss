@@ -1,48 +1,55 @@
 .articlesdesign {
-    width: 75%;
-    background-color: #56CCF2;
-    margin: auto;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 4rem;
 }
 
-h2, h4 {
+.subjetsStyle {
+    background-color: #DDC9D8;
+    padding: 2rem;
+    color: #8C6384;
+}
+
+h2, h3, h4 {
     text-align: center;
+}
+
+.commentStyleTitle{
+    color: #8C6384;
+    margin-top: 3rem;
+}
+
+.commentstyle {
+    color:#DDC9D8 ;
+    margin-bottom: 0.5rem;
+    margin-top: 2rem;
 }
 
 .articlesdesign button {
     position: relative;
     left: 50%;    
     transform: translateX(-50%);
-    padding: 5px;
-    border-radius: 10px;
-    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    color: #8C6384;
     cursor: pointer;
-    background-color: #3184EE;
-        box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
--webkit-box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
--moz-box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
+    background-color:  #DDC9D8;
 }
-
 .articlesdesign button:hover { 
-    background-color: blue;
+    background-color: #8C6384;
+    color:#DDC9D8 ;
 }
-
 .articlesdesign a {
     position: relative;
     left: 50%;    
     transform: translateX(-50%);
     padding: 5px;
-    border-radius: 10px;
-    color: white;
+    border-radius: 20px;
+    color: #8C6384;
     cursor: pointer;
-    background-color: #3184EE;
-        box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
--webkit-box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
--moz-box-shadow: 8px 14px 25px -12px rgba(0,0,0,0.75);
+    background-color: #DDC9D8;
 }
-
 .articlesdesign a:hover { 
-    background-color: blue;
+    background-color: #8C6384;
+    color:#DDC9D8 ;
 }

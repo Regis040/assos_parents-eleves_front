@@ -7,33 +7,48 @@ const HeaderAdmin = () => {
     const navigate = useNavigate();
   
     const handleLogout = () => {
-      // dégagerle token du local storage
+      // Je dégage le token du local storage
       localStorage.removeItem("jwt");
   
-      // redirige l'utilisateur vers la page de login
+      // je redirige l'utilisateur vers la page de login
       navigate("/login");
     };
 
   return (
-    <div class="headeradmin">
-      <nav id="navheaderadmin">
-        <ul id="navheaderadminposition">
-          <li>
-            <Link to="/admin/">Dashboard</Link>
-          </li>
-          <li>
-            <Link to="/admin/articles">Gérer les articles</Link>
-          </li>
-          <li>
-            <Link to="/admin/articles/create">Créer un article</Link>
-          </li>
-          <li>
-            <Link to="/admin/users">Gérer les adhérents</Link>
-          </li>
-        </ul>
-        <button onClick={handleLogout}>Se déconnecter</button>
-      </nav>
-    </div>
+    <>
+      <div class="headeradmin">
+        <nav id="navheaderadmin">
+            <div id="logoheader">
+              <img id="logo" src="../../assets/imgs/logo.png" alt="le logo" />
+            </div>
+            <ul id="navheaderadminposition">
+                <li>
+                  <Link to="/admin/">Accueil admin</Link>
+                </li>
+                <li>|</li>
+                <li>
+                  <Link to="/admin/articles">Gérer les sujets</Link>
+                </li>       
+                <li>|</li> 
+                <li>
+                  <Link to="/admin/users">Gérer les adhérents</Link>
+                </li>
+                <li>|</li>
+                <li>
+                  <Link to="/">Accueil</Link>
+                </li>
+                <li>|</li>
+                <li>
+                  <button onClick={handleLogout}>Se déconnecter</button>
+                </li>
+              </ul>        
+        </nav>
+      </div>
+      <div id="titleAdmin">
+          <h2>Association de parents d'élèves</h2>
+          <h1>AU  COEUR DE L'ENFANCE</h1>
+      </div>
+    </>
   );
 };
 

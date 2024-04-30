@@ -1,30 +1,48 @@
 .articlestyle {
     background-color:#fff;
     width: 100%;
-    margin-top: 2rem;
-    border-radius: 30px;
-
+    border-radius: 50px;
+    margin-top: 2%;
 }
 
 .commentstyle {
     background-color: #fff;
-    width: 90%;
+    width: 100%;
     margin: auto;
-    border-radius: 30px;
+    border-radius: 50px;
+    color: #8C6384;
 }
 
 .sujetstyle {
+    width: 100%;
     background-color: #DDCEDA;
-    display: inline-block;
     border-radius: 10px;
-    padding: 2 rem;
-    color: white;
+    color: #8C6384;
+    padding: 2%;
+    margin: 0%;
 }
 
 .h2style {
-    font-size: larger;    
+    font-size: larger; 
+    color: #8C6384;   
 }
 
-.noCommentInCase {
+h4 {
+    color: #8C6384;
+}
+    
+.formCommentPosition {
     margin: auto;
+}
+
+.commentPosition {
+    color: #8C6384;
+    position: relative;
+    left: 10%;
+    margin: 1% 0%;
+}
+
+.commentUnderline {
+    font-size: larger;
+    font-weight: 500;
 }

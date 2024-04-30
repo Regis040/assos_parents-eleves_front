@@ -15,8 +15,7 @@ const DashboardPage = () => {
   return (
     <>
       <HeaderAdmin />
-
-      <h2>Vous êtes bien connecté en tant qu'admin</h2>
+      <div class="soustitre"><h2>Vous êtes bien connecté en tant qu'admin</h2></div>      
     </>
   );
 };
