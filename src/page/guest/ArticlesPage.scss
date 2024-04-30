@@ -1,15 +1,12 @@
 .articlestyle {
     background-color:#fff;
     width: 100%;
-    border-radius: 50px;
     margin-top: 2%;
 }
-
 .commentstyle {
     background-color: #fff;
-    width: 100%;
+    width: 80%;
     margin: auto;
-    border-radius: 50px;
     color: #8C6384;
 }
 
@@ -22,7 +19,12 @@
     margin: 0%;
 }
 
-.h2style {
+.commentUnderline {
+    font-size: larger;
+    font-weight: 700;
+    margin-bottom: 3%;
+}
+.h2style { 
     font-size: larger; 
     color: #8C6384;   
 }
@@ -35,14 +37,4 @@ h4 {
     margin: auto;
 }
 
-.commentPosition {
-    color: #8C6384;
-    position: relative;
-    left: 10%;
-    margin: 1% 0%;
-}
 
-.commentUnderline {
-    font-size: larger;
-    font-weight: 500;
-}

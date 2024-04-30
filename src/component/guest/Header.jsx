@@ -11,8 +11,8 @@ const Header = () => {
     // Je dégage le token du local storage
     localStorage.removeItem("jwt");
 
-    // // je redirige l'utilisateur vers la page de login
-    // navigate("/login");
+    // je redirige l'utilisateur vers la page de login
+    navigate("/login");
   };
 
   return (
@@ -32,7 +32,15 @@ const Header = () => {
             <li>|</li>
             <li><Link to="/register">S'inscrire</Link></li>
             <li>|</li>
-            <li><Link to="/login">Se connecter</Link></li>
+            {token ? (
+            <li>
+              <button onClick={handleLogout}>Se déconnecter</button>
+            </li>
+          ) : (
+            <li>
+              <Link to="/login">Se connecter</Link>
+            </li>
+          )}
           </ul>
         </div>
         <div className="titleone">

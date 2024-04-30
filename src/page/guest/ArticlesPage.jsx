@@ -38,7 +38,6 @@ const ArticlesPage = () => {
   }, [id]);
 
 
-
   const handleCreateComment = async (event, articleId) => {
     event.preventDefault(); 
     
@@ -66,7 +65,7 @@ const ArticlesPage = () => {
 
     if (commentResponse.ok) {   
       alert("Commentaire créé.");      
-      window.location.reload();
+      // window.location.reload();
     } else {
       alert("Le commentaire n'as pu être créé. Etes-vous connecté ?. ");
     }
@@ -76,31 +75,26 @@ const ArticlesPage = () => {
     }    
     };
 
-
   return (
     <>
       <Header />
           <div> 
-              <div class="soustitre">
-                  <h2>Les sujets du mois</h2>
-              </div>
+              <h2>Les sujets du mois : </h2>
               {articles ? (
                 <>
                   {articles.map((article) => {
                    return (
                        <article class="articlestyle">
-                          <h2 class="sujetstyle">{article.articlebody}</h2>
-                          <h2 class="h2style">Les commentaires : </h2>
+                       <h2 class="sujetstyle">{article.articlebody}</h2>
+                        <h2 class="h2style">Les commentaires : </h2>
                             {comments ? (
-                               <div className="commentstyle">                    
+                               <div class="commentstyle">                    
                                  {comments                        
                                     .filter((comment) => comment.ArticleId === article.id)
                                     .map((comment) => (
                                       <article key={comment.id}>                                                        
-                                        <div className="commentPosition">
-                                            <div>{comment.User.username} a commenté : </div>
-                                            <div className="commentUnderline">{comment.content}</div>
-                                        </div>                            
+                                        <p>l'adhérent : {comment.User.username}</p>
+                                        <p className="commentUnderline">a commenté : {comment.content}</p>                            
                                       </article>
                                     ))}                  
                                 </div>
@@ -108,15 +102,12 @@ const ArticlesPage = () => {
                               <p>En cours de chargement</p>
                             )}
 
-                            {comments && comments.filter((comment) => comment.ArticleId === article.id).length === 0 && (
-                                  <h4 >Soyez le premier à commentez ce sujet</h4>
-                            )}
-
                             <form className="formCommentPosition" onSubmit={(event) => handleCreateComment(event, article.id)}>                  
-                              <label >                               
-                                <textarea placeholder="Rédigez votre commentaire" type="text" name="content" />
+                              <label >
+                                Réservé aux adhérents....
+                                <textarea placeholder="Commentez" type="text" name="content" />
                               </label>
-                              <input className="submitBtn" type="submit" />
+                              <input type="submit" />
                             </form>
                   </article>
                 );
