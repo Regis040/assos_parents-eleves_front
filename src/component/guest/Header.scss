@@ -1,5 +1,5 @@
 
-// @import '../../sass/variables';
+@import '../../sass/variables';
 // @import '../../sass/typo';
 
 @font-face {
@@ -21,22 +21,15 @@
    padding-top: 2rem;
 }
 
-// #navheader ul {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   height: 100%;
-// }
-
 #navheader li { 
     list-style: none;
     text-decoration: none;
     margin-right: 2rem;
     margin-top: 1rem;
-    color: #8C6384;
 }
 #navheader li  a { 
   position: relative;
+  color: $purple-dark-color;
 }
 
 #navheader li a::before {
@@ -46,7 +39,7 @@
   left: 50%; /* Commencer du centre */
   width: 0; /* Largeur initiale nulle */
   height: 2px; /* Hauteur de la barre */
-  background-color: #8C6384; /* Couleur de la barre */
+  background-color: $purple-dark-color; /* Couleur de la barre */
   transition: width 0.3s ease-out, left 0.3s ease-out; /* Animation de la largeur et de la position */
 }
 
@@ -63,6 +56,20 @@
 #logoheader {
   padding-left: 2rem;
   padding-top: 1rem;
+}
+
+#headerstyle button {
+  background-color: #C8B1C4;
+  color: $purple-dark-color;
+  padding: 6px 6px;
+  border: 2px solid ;
+  border-radius: 20px;
+}
+
+#headerstyle button:hover {
+  background-color: $purple-dark-color;
+  color: white;
+  cursor: pointer;
 }
 
 // Le titre 1 et l'image de fond

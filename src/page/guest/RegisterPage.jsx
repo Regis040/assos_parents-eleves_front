@@ -52,8 +52,7 @@ console.log(registerDataJson)
     if (registerResponse.status === 201) {      
       setMessage("Vous vous êtes bien enregistré");
       navigate("/login");
-    } else {
-    
+    } else {    
       setMessage("Erreur lors de l'enregistrement");
     }
   };
@@ -101,10 +100,7 @@ console.log(registerDataJson)
                 </select>
                 <label>              
                     <input  placeholder="Sa classe" type="text" name="school_class" />
-                </label>             
-                
-
-
+                </label>        
                 <input  type="submit" />
           </form>
         </section>

@@ -2,14 +2,12 @@ import { Link, useNavigate } from "react-router-dom";
 import "./HeaderAdmin.scss";
 
 const HeaderAdmin = () => {
-
   
     const navigate = useNavigate();
   
     const handleLogout = () => {
       // Je dégage le token du local storage
-      localStorage.removeItem("jwt");
-  
+      localStorage.removeItem("jwt");  
       // je redirige l'utilisateur vers la page de login
       navigate("/login");
     };
@@ -35,7 +33,7 @@ const HeaderAdmin = () => {
                 </li>
                 <li>|</li>
                 <li>
-                  <Link to="/">Accueil</Link>
+                  <Link to="/">Retour accueil</Link>
                 </li>
                 <li>|</li>
                 <li>

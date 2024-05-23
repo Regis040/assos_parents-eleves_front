@@ -19,6 +19,8 @@ import CommentCreate from './page/guest/CommentCreate';
 import RegisterPage from './page/guest/RegisterPage';
 import AdminUserPage from './page/admin/AdminUserPage';
 import SchoolHarassment from './page/guest/SchoolHarassment';
+import ElementairePage from './page/guest/ElementairePage';
+import LegalMentionsPage from './page/guest/LegalMentionsPage';
 
 function App() {
   return (
@@ -31,7 +33,9 @@ function App() {
             <Route path="/user" element={<UserPage />} />
             <Route path="/aboutus" element={<AboutUsPage />} />
             <Route path="/maternelle" element={<MaternellePage />} />
+            <Route path="/elementaire" element={<ElementairePage />} />
             <Route path="/harcellement" element={<SchoolHarassment />} />
+            <Route path="/legalmentions" element={<LegalMentionsPage />} />
             <Route path="/comment/details/:id" element={<CommentEachPage/>} />          
             <Route path="/comments" element={<CommentsPage />} />
             <Route path="/comments/create" element={< CommentCreate />} />

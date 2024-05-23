@@ -12,11 +12,12 @@ footer {
             // La partie réseaux sociaux
 #socialmedias_gl{
     margin-top: 1.5rem;
+    width: 250px;
 }
 
 #socialmedias_in{
     display: flex;  
-    justify-content: space-around;  
+    // justify-content: space-around;  
 }
 #socialmedia_title{
     font-size: 22px;
@@ -26,7 +27,8 @@ footer {
 #facebook{
     height: 40px;
     width: 40px;
-    margin-right: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 #facebook_pic{
     height: 40px;
@@ -43,16 +45,10 @@ footer {
 }
 
 
-// La partie logo
-// #logofooter {
-//     height: 170 px;   
-//     text-align: center;
-// }
-
-
 // la partie contact
 #address {
     margin-top: 1.5rem;
+    width: 250px;
 }
 #contact_title{
     font-size: 22px;
@@ -69,10 +65,15 @@ footer {
     justify-content:center;
     margin-top: 1rem;
 }
-
 .legal_mentions {
-    padding-right: 10px;
+    padding-right: 10px;   
 }
 
+#footer_legal a{
+    color: black;
+}
 
+#footer_legal a:hover {
+    color: white;
+}
 

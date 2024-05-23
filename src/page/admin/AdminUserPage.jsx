@@ -44,7 +44,7 @@ const AdminUserPage = () => {
                             <div>
                                 <article id="loggerstyle">
                                      <div class="memberStyleAdmin">{user.username}</div>                                 
-                                        {decodedToken.data.role !== 3 && (
+                                        {decodedToken.data.role !== 1 && (
                                          <button onClick={(event) => handleDeleteUser(event, user.id)}>Supprimer</button>                                   
                                         )}
                                 </article>

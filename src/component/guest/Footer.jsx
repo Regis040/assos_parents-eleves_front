@@ -1,3 +1,4 @@
+import { Link} from "react-router-dom";
 import "./Footer.scss";
 
 function Footer () {
@@ -7,7 +8,7 @@ function Footer () {
                 <div id="socialmedias_gl">
                     <div id="socialmedia_title">Réseaux sociaux</div>  
                     <div id="socialmedias_in">
-                         <div id="facebook"><img id="facebook_pic" src="../../assets/imgs/facebook.png" alt="le logo facebook" /></div>
+                         <div id="facebook"><Link to="https://www.facebook.com/aucoeurdelenfance40"><img id="facebook_pic" src="../../assets/imgs/facebook.png" alt="le logo facebook" /></Link></div>
                          <div id="twitter"><img id="twitter_pic" src="../../assets/imgs/twitter.png" alt="le logo twitter" /></div>
                     </div>                  
                 </div>
@@ -21,11 +22,11 @@ function Footer () {
                 </div>
             </div>
             <div id="footer_legal">
-                <div class="legal_mentions">Copyright</div>
+                <div class="legal_mentions"><Link to="/legalmentions">Copyright</Link></div>
                 <div class="legal_mentions"> | </div>
-                <div class="legal_mentions">Mentions légales</div>
+                <div class="legal_mentions"><Link to="/legalmentions">Mentions légales</Link></div>
                 <div class="legal_mentions"> | </div>
-                <div class="legal_mentions">Gérer les cookies</div>
+                <div class="legal_mentions"><Link to="/legalmentions">Gérer les cookies</Link></div>
             </div>
        </footer>
     )

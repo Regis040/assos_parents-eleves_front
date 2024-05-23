@@ -14,7 +14,7 @@ function Schools () {
                     <h3>MATERNELLE</h3>
             </div>               
             <div class="container-school">
-                <a href="#">
+                <a href="http://localhost:3001/elementaire">
                     <div class="img-container-school"><img class="img-school" src="../../assets/imgs/elementaire.png" alt="l'école élementaire" /></div>
                 </a>
                 <h3>ELEMENTAIRE</h3>

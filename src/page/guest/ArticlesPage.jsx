@@ -65,11 +65,10 @@ const ArticlesPage = () => {
 
     if (commentResponse.ok) {   
       alert("Commentaire créé.");      
-      // window.location.reload();
+      window.location.reload();
     } else {
       alert("Le commentaire n'as pu être créé. Etes-vous connecté ?. ");
     }
-
     } catch (error) {
       alert("Une erreur est survenue. Etes-vous connecté ?");
     }    

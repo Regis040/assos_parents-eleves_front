@@ -60,7 +60,7 @@ const AdminArticlesPage = () => {
   console.log(articles)
   return (
     <>
-    <HeaderAdmin />
+      <HeaderAdmin />
       <div className="soustitre">
         <h2>Vous êtes connecté en tant qu'admin : gérer les sujets et leurs commentaires </h2>
       </div>
