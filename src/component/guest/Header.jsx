@@ -1,12 +1,11 @@
 import { Link, useNavigate} from "react-router-dom";
-import { jwtDecode } from "jwt-decode";
+// import { jwtDecode } from "jwt-decode";
 import "./Header.scss";
-
 
 const Header = () => {
 
   const token = localStorage.getItem("jwt");
-  // const decodedToken = jwtDecode(token);
+
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -16,17 +15,14 @@ const Header = () => {
     navigate("/login");
   };
 
-  // const adminPage = () => {
-  //   // je redirige l'utilisateur vers la page de dashboard
-  //   navigate("/admin/");
-  // };
-
   return (
     <>      
         <div id="headerstyle">
           <div id="logoheader">
             <img id="logo" src="../../assets/imgs/logo.png" alt="le logo" />
-          </div>
+          </div>          	
+          <label for="toggle">☰</label>
+          <input type="checkbox" id="toggle" />
           <ul id="navheader">                       
             <li><Link to="/">Accueil</Link></li>
             <li>|</li>
@@ -47,12 +43,6 @@ const Header = () => {
                 <Link to="/login">Se connecter</Link>
               </li>
             )}
-            {/* {decodedToken.data.role !== 3 && (
-              <li>
-                <button onClick={adminPage}>Zone Administrateur</button>
-              </li>
-              )} */}
-
           </ul>
         </div>
         <div className="titleone">
