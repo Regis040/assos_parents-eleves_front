@@ -81,3 +81,15 @@
   background-color:#DDC9D8; /* couleur de fond au survol */
 }
 
+/* Requêtes média pour adaptabilité mobile */
+@media (max-width: 768px) {
+ #blocs_actu {
+  display:flex;
+  flex-direction: column;
+ }
+ .bloc {
+  margin: auto;
+  width: 90%;
+  margin-bottom: 15px;
+ }
+}

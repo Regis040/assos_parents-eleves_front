@@ -2,31 +2,22 @@
   font-family: "RobotoRegular";
   src: url(../../../public/assets/typo/Roboto/Roboto-Regular.ttf);    
 }
-
-.headeradmin {
-  font-family: 'RobotoRegular';
-} 
+@import '../../sass/variables';
 
 .headeradmin {
     height: 150px;
     width: 100%;
 }
-
 #navheaderadmin {
     display: flex;
     justify-content: space-between;
+    height: 100px;
 }
-
 #navheaderadminposition { // position de mes ul
     display: flex;
     justify-content: center;    
+    height: 75px;
 }
-
-// a {
-//     text-decoration: none;
-//     color: #8C6384;
-// }
-
 #navheaderadminposition  li {
     margin-top: 1rem;
     margin-right: 1rem;
@@ -57,8 +48,6 @@
   width: 100%; /* Augmenter la largeur de la barre au survol */
   left: 0; /* Déplacer la barre vers la gauche pour partir des extérieurs */
 }
-  
-
   .headeradmin button {
     background-color:#DDC9D8;
     color: #8C6384;
@@ -67,7 +56,6 @@
     border: none;
     cursor: pointer;
   }
-
   .headeradmin button:hover {
     background-color:#8C6384;
     color: white;
@@ -77,31 +65,56 @@
   font-size: 1.5rem;
   color: #8C6384;
 }
-
 h1, h2 {
   text-align: center;
 }
 
-//   @media screen and (max-width: 500px) {
+#navheaderadmin label, #navheaderadmin #toggle {
+  display:none;
+}
 
-    
-//     .headeradmin {       
-//           width: 100%;           
-//     }
-    
-//    #navheaderadmin {
-//     display: flex;
-//     flex-direction: column;
-//     font-size: 15px;
-// }
-    
-//     #navheader ul {
-//       display: flex;
-//       flex-direction: column;
-//       justify-content: center;
-//       justify-items: center;
-//       margin-top: 3px;
-//     }  
-   
-    
-//  }      
+  @media screen and (max-width: 768px) {
+    .headeradmin {
+      height: 400px;
+      width: 100%;
+  }
+  
+    #navheaderadmin {
+    flex-direction: column;
+    height: auto;
+    // padding: 1rem;
+  }  
+   #logoheader {
+    width: 160px;
+    height: auto;    
+    margin: auto;
+  }
+  #navheaderadmin label   {
+      width: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      font-size: 40px;
+      color: $purple-dark-color;
+      cursor: pointer;
+  } 
+  #navheaderadminposition {
+    display: none;
+    flex-direction: column;
+    padding: 0;
+    width: 200px;
+    height: auto;
+    margin: auto;
+  }
+ 
+  #navheaderadminposition li {
+    margin: auto;
+  }
+  #toggle:checked + #navheaderadminposition {
+    display: flex;
+  }
+  #titleAdmin{
+    font-size: 1rem;
+  }
+ }      

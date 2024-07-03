@@ -104,7 +104,6 @@
     height: auto;
     padding: 1rem;
   }
-
   #logo {
     width: 160px;
     height: auto;
@@ -119,8 +118,7 @@
       font-size: 40px;
       color: $purple-dark-color;
       cursor: pointer;
-  }
- 
+  } 
   #navheader {
     display: none;
     flex-direction: column;
@@ -131,24 +129,19 @@
   #navheader a {
     width: 50%;
 }
-
   #navheader li {
     margin: 0.5rem 0;
   }
-
   #toggle:checked + #navheader {
     display: flex;
 }
-
   .titleone {
     height: 300px;
   }
-
   .titleone h1 {
     font-size: 3rem;
     padding-top: 1rem;
   }
-
   .titleone h2 {
     font-size: 2rem;
     padding-top: 2rem;

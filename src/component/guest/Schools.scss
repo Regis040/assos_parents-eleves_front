@@ -52,20 +52,21 @@
     text-align: center;
     color: #8C6384;
 }
-// @media screen and (max-width: 500px) {
-
-
-
-// .container-schools {
-//   flex-direction: column;
-//   align-items: center;
-//   width: 100%;
-//   margin: auto;
-//  }
-
-// .container-school {
-//     width: 100%;
-//     margin: auto;
-// }
-
-// } 
+@media screen and (max-width: 768px) {
+    .container-schools {
+    flex-direction: column;
+    width: 90%;
+    margin: auto; 
+    }
+    .container-school {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .soustitre {        
+        height: 90px;     
+    }
+    .soustitre h2 {
+        font-size: 18px;
+        top: 20%;
+    }
+} 

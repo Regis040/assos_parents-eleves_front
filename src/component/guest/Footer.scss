@@ -16,13 +16,11 @@ footer {
 }
 
 #socialmedias_in{
-    display: flex;  
-    // justify-content: space-around;  
+    display: flex;      
 }
 #socialmedia_title{
     font-size: 22px;
-    margin-bottom: 5px;
-    
+    margin-bottom: 5px;   
 }
 #facebook{
     height: 40px;
@@ -77,3 +75,51 @@ footer {
     color: white;
 }
 
+@media screen and (max-width: 768px) {
+    #footer_contact {
+        display: flex;
+        flex-direction: column;        
+    }
+    #logofooter {
+        display: none;
+    }
+    #socialmedias_gl {
+        margin: auto;
+    }
+    #address {
+        margin: auto;
+    }
+    #socialmedia_title{
+        font-size: 20px;
+        text-align: center; 
+    }
+    #socialmedias_in{
+        justify-content:space-evenly;   
+        margin-bottom: 20px;       
+    }
+    #facebook{
+        height: 40px;
+        width: 40px;
+        margin-left: 0;
+    }
+    #contact_title{
+        font-size: 20px;
+        text-align: center;
+    }
+    .address_text{
+        font-size: 10px;
+        text-align: left;
+    }
+    #address {
+        margin-top: 1.5rem;
+        width: 150px;
+    }
+    footer {
+        height: 250px;
+    }
+    .legal_mentions {
+        // padding-right: 2px;   
+        font-size: 13px;
+        justify-content: space-between;
+    }
+} 
