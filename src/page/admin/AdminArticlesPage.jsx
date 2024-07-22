@@ -64,8 +64,9 @@ const AdminArticlesPage = () => {
       <div className="soustitre">
         <h2>Vous êtes connecté en tant qu'admin : gérer les sujets et leurs commentaires </h2>
       </div>
-      
-
+            <div id="createArticle">
+        <Link to="/admin/articles/create">Créer un nouvel article</Link>
+      </div>
       {articles ? (
         <>
           {articles.map((article) => {

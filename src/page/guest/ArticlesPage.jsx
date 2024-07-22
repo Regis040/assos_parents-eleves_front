@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Header from "../../component/guest/Header";
+import Footer from "../../component/guest/Footer";
 import { useParams } from "react-router-dom";
 import "./ArticlesPage.scss";
 import './Form.scss';
@@ -117,6 +118,7 @@ const ArticlesPage = () => {
           )}
         
          </div>
+         <Footer />
     </>
   );
 };

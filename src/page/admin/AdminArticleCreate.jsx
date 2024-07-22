@@ -2,6 +2,7 @@ import { useState } from "react";
 import HeaderAdmin from "../../component/admin/HeaderAdmin";
 import { useVerifyIfUserIsLogged } from "../../utilis/security-utilis";
 import { jwtDecode } from "jwt-decode";
+import "./AdminArticleCreate.scss";
 
 const AdminArticleCreate = () => {
 
@@ -46,19 +47,26 @@ const AdminArticleCreate = () => {
 
     return (
             <>
-                 <HeaderAdmin />
+                <HeaderAdmin />
+                <div className="soustitre">
+                  <h2>Vous êtes connecté en tant qu'admin : Créer un commentaire </h2>
+                </div>
                 {message && <p>{message}</p>}
            
                 <form onSubmit ={handleCreateArticle} className="formposition">
                         <div>
-                            <label htmlFor="articletitle">Titre de l'article:</label>
-                            <input type="text" id="articletitle" name="articletitle" required />
+                            <h3>Titre de l'article:</h3>
+                            <div className="createInputs">
+                             <input placeholder="Entrer le titre de l'article" type="text"  name="articletitle" required />
+                            </div>
                         </div>
                         <div>
-                            <label htmlFor="articlebody">Contenu de l'article:</label>
-                            <textarea id="articlebody" name="articlebody" rows="5" required></textarea>
+                            <h3>Contenu de l'article:</h3>
+                            <div className="createInputs">
+                              <textarea placeholder="Entrer le sujet de l'article" name="articlebody" rows="5" required></textarea>
+                            </div>
                         </div>
-                        {decodedToken.data.role !== 1 && (
+                        {decodedToken.data.role !== 3 && (
                             <button type="submit">Soumettre l'article</button>              
                         )}                        
                 </form>

@@ -7,9 +7,7 @@ import './AdminArticleUpdate.scss';
 const AdminArticleUpdate = () => {
    
   const { id } = useParams();
-
   const [article, setArticle] = useState(null);
-
   const [message, setMessage] = useState(null);
 
   useEffect(() => {
@@ -19,7 +17,6 @@ const AdminArticleUpdate = () => {
       setArticle(articleResponseData.data);
     })();
   }, [id]);
-
 
   const handleUpdateArticle = async (event) => {
     event.preventDefault();

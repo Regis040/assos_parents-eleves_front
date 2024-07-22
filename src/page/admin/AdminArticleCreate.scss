@@ -1,0 +1,19 @@
+form .createInputs {
+    text-align: center;
+}
+textarea {
+    width: 300px;
+}
+
+button {
+    padding: 5px;
+    border-radius: 20px;
+    margin: 5px 10px;
+    background-color: #DDCEDA;
+    color: #8C6384;
+}
+
+button:hover {
+    background-color:#8C6384;
+    color: white;
+}

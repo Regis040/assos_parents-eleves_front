@@ -1,8 +1,8 @@
-// Zone d'introduction au sujet qui est l'école élementaire
+// Zone d'introduction au sujet qui est le collège
 .PicPosition {
     margin-left: 5%;
 }
- .elementairePhotoTitle {
+ .lyceePhotoTitle {
     background-color: lightgrey;
     width: 40%;
     padding: 30px;
@@ -13,14 +13,14 @@
     left: 700px;
     top: -50px;   
 }
-.elementaireParagraphIntro {
+.lyceeParagraphIntro {
     width: 60%;
     margin-left: 10%;
     border-left: 4px solid #8C6384;
     padding: 0.1%;
     margin-bottom: 2%;
 }
-.elementaireParagraphIntro p {
+.lyceeParagraphIntro p {
     margin-left: 1%;
     color: #8C6384;
     font-size: 20px;
@@ -40,7 +40,6 @@
 .greenAreaTitle{
     font-size: 20px;
 }
-
 .greenAreaPragraph{
     position: relative;
     left : 2.5%

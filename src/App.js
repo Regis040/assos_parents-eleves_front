@@ -12,6 +12,7 @@ import CommentEachPage from './page/guest/CommentEachPage';
 import CommentsPage from './page/guest/CommentsPage';
 import AboutUsPage from './page/guest/AboutUsPage';
 import MaternellePage from './page/guest/MaternellePage';
+import CollegePage from './page/guest/CollegePage';
 import AdminCommentCreate from './page/guest/CommentCreate';
 import UserPage from './page/guest/UserPage';
 import AdminCommentsPage from './page/admin/AdminCommentsPage';
@@ -21,6 +22,8 @@ import AdminUserPage from './page/admin/AdminUserPage';
 import SchoolHarassment from './page/guest/SchoolHarassment';
 import ElementairePage from './page/guest/ElementairePage';
 import LegalMentionsPage from './page/guest/LegalMentionsPage';
+import LyceePage from './page/guest/LyceePage';
+
 
 function App() {
   return (
@@ -34,6 +37,8 @@ function App() {
             <Route path="/aboutus" element={<AboutUsPage />} />
             <Route path="/maternelle" element={<MaternellePage />} />
             <Route path="/elementaire" element={<ElementairePage />} />
+            <Route path="/college" element={<CollegePage />} />
+            <Route path="/lycee" element={<LyceePage />} />
             <Route path="/harcellement" element={<SchoolHarassment />} />
             <Route path="/legalmentions" element={<LegalMentionsPage />} />
             <Route path="/comment/details/:id" element={<CommentEachPage/>} />          

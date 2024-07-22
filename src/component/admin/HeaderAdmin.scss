@@ -75,15 +75,14 @@ h1, h2 {
 
   @media screen and (max-width: 768px) {
     .headeradmin {
-      height: 400px;
+      height: auto;
       width: 100%;
-  }
-  
+    }  
     #navheaderadmin {
     flex-direction: column;
     height: auto;
     // padding: 1rem;
-  }  
+    }  
    #logoheader {
     width: 160px;
     height: auto;    
