@@ -23,6 +23,8 @@ import SchoolHarassment from './page/guest/SchoolHarassment';
 import ElementairePage from './page/guest/ElementairePage';
 import LegalMentionsPage from './page/guest/LegalMentionsPage';
 import LyceePage from './page/guest/LyceePage';
+import MonthMeetingPage from './page/guest/MonthMeetingPage';
+
 
 
 function App() {
@@ -40,10 +42,11 @@ function App() {
             <Route path="/college" element={<CollegePage />} />
             <Route path="/lycee" element={<LyceePage />} />
             <Route path="/harcellement" element={<SchoolHarassment />} />
+            <Route path="/monthmeet" element={<MonthMeetingPage />} />
             <Route path="/legalmentions" element={<LegalMentionsPage />} />
-            <Route path="/comment/details/:id" element={<CommentEachPage/>} />          
-            <Route path="/comments" element={<CommentsPage />} />
-            <Route path="/comments/create" element={< CommentCreate />} />
+            {/* <Route path="/comment/details/:id" element={<CommentEachPage/>} />           */}
+            {/* <Route path="/comments" element={<CommentsPage />} /> */}
+            {/* <Route path="/comments/create" element={< CommentCreate />} /> */}
             
 
              {/* login/enregistrement */}

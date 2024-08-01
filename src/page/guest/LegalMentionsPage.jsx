@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../../component/guest/Header";
 import Footer from "../../component/guest/Footer";
-// import './SchoolHarassment.scss';
 
 const LegalMentionsPage = () => {
   return (

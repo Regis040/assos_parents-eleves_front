@@ -18,7 +18,6 @@ export const useVerifyIfUserIsLogged = () => {
 
   useEffect(() => {
     const token = localStorage.getItem("jwt");
-
     if (!token) {
       navigate("/login");
     }

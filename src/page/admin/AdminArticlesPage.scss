@@ -1,21 +1,23 @@
+@import '../../sass/variables';
+
 .articlesdesign {
     width: 100%;
     margin-bottom: 4rem;
 }
 .subjetsStyle {
-    background-color: #DDC9D8;
+    background-color: $purple-light-color;
     padding: 2rem;
-    color: #8C6384;
+    color: $purple-dark-color;
 }
 h2, h3, h4 {
     text-align: center;
 }
 .commentStyleTitle{
-    color: #8C6384;
+    color: $purple-dark-color;
     margin-top: 3rem;
 }
 .commentstyle {
-    color:#DDC9D8 ;
+    color:$purple-light-color ;
     margin-bottom: 0.5rem;
     margin-top: 2rem;
 }
@@ -26,13 +28,13 @@ h2, h3, h4 {
     padding: 10px;
     border: none;
     border-radius: 20px;
-    color: #8C6384;
+    color: $purple-dark-color;
     cursor: pointer;
-    background-color:  #DDC9D8;
+    background-color: $purple-light-color;
 }
 .articlesdesign button:hover { 
-    background-color: #8C6384;
-    color:#DDC9D8 ;
+    background-color: $purple-dark-color;
+    color:$purple-light-color ;
 }
 .articlesdesign a {
     position: relative;
@@ -40,18 +42,18 @@ h2, h3, h4 {
     transform: translateX(-50%);
     padding: 5px;
     border-radius: 20px;
-    color: #8C6384;
+    color: $purple-dark-color;
     cursor: pointer;
-    background-color: #DDC9D8;
+    background-color: $purple-light-color;
 }
 .articlesdesign a:hover { 
-    background-color: #8C6384;
-    color:#DDC9D8 ;
+    background-color: $purple-dark-color;
+    color:$purple-light-color ;
 }
 
 #createArticle{
-    color: #8C6384;
-    background-color: #DDC9D8;
+    color: $purple-dark-color;
+    background-color: $purple-light-color;
     padding: 20px;
     width: 160px;
     font-size: medium;
@@ -59,8 +61,32 @@ h2, h3, h4 {
     margin: auto;
 }
 #createArticle:hover {
-    background-color: #D7FEAD;         
+    background-color: $formbgcolor;         
 }
 #createArticle a:hover {    
     color:#DDC9D8;   
+}
+
+/* Requêtes média pour adaptabilité mobile */
+@media (max-width: 768px) {
+    footer {
+        height: 400px;
+    }
+    .soustitre    {
+        margin-bottom: 10px;
+    }
+    .subjetsStyle {
+        font-size: 20px;
+    }
+    .articlesdesign button {
+        position: relative;
+        left: 15%;    
+        // transform: translateX(-50%);
+    }
+    .articlesdesign a {
+        position: relative;
+        left: 30%;    
+        // transform: translateX(-50%);
+    }
+  
 }

@@ -17,7 +17,7 @@ const HeaderAdmin = () => {
       <div class="headeradmin">
         <nav id="navheaderadmin">
             <div id="logoheader">
-              <img id="logo" src="../../assets/imgs/logo.png" alt="le logo" />
+            <img id="logo" src="../assets/imgs/logo.png" alt="le logo" />
             </div>
             <label for="toggle">☰</label>
             <input type="checkbox" id="toggle" />

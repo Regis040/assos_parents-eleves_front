@@ -1,5 +1,6 @@
 import { useState } from "react";
 import HeaderAdmin from "../../component/admin/HeaderAdmin";
+import Footer from "../../component/guest/Footer";
 import { useVerifyIfUserIsLogged } from "../../utilis/security-utilis";
 import { jwtDecode } from "jwt-decode";
 import "./AdminArticleCreate.scss";
@@ -23,7 +24,7 @@ const AdminArticleCreate = () => {
         const articleToCreate = {
           articletitle: articletitle,
           articlebody: articlebody,
-          };
+        };
       
           const articleToCreateJson = JSON.stringify(articleToCreate);
 
@@ -70,6 +71,7 @@ const AdminArticleCreate = () => {
                             <button type="submit">Soumettre l'article</button>              
                         )}                        
                 </form>
+                <Footer />
             </>
     )
 }

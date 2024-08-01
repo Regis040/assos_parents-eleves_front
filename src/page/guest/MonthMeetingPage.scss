@@ -1,8 +1,7 @@
 @import '../../sass/variables';
-
 .sujetstyle {
     width: 100%;
-    background-color: #DDCEDA;
+    background-color: $purple-light-color;
     border-radius: 10px;
     color: $purple-dark-color;
     padding: 2%;
@@ -14,8 +13,3 @@
     padding: 2%;
 }
 
-#harcelementTableau {
-    width: 50%;
-    position: relative;
-    left: 25%;
-}

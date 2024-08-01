@@ -1,13 +1,16 @@
 
+@import '../../sass/variables';
+
 // Le bandeau : titre 2 et couleur de fond
 
 .soustitre {
-    background-color: #8C6384;
-    height: 75px;
+    background-color: $purple-dark-color;
+    height: 76px;
     width: 100%;
     margin: 0%;
     position: relative;  
-    margin-bottom: 2%;
+    margin-bottom: 1%;
+    padding-bottom: 1%;
   }
   .soustitre h2 {
     margin: 0;
@@ -31,7 +34,7 @@
     margin: 0 1%;
     // padding-bottom: 2rem;
     // position: relative;  
-    border: 1px solid #8C6384;
+    border: 1px solid $purple-dark-color;
     border-radius: 30px;
 }
 
@@ -50,8 +53,10 @@
 
 .container-schools h3 {
     text-align: center;
-    color: #8C6384;
+    color: $purple-dark-color;
 }
+
+
 @media screen and (max-width: 768px) {
     .container-schools {
     flex-direction: column;

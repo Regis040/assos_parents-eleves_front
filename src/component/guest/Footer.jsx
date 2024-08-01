@@ -8,11 +8,11 @@ function Footer () {
                 <div id="socialmedias_gl">
                     <div id="socialmedia_title">Réseaux sociaux</div>  
                     <div id="socialmedias_in">
-                         <div id="facebook"><Link to="https://www.facebook.com/aucoeurdelenfance40"><img id="facebook_pic" src="../../assets/imgs/facebook.png" alt="le logo facebook" /></Link></div>
+                         <div id="facebook"><Link to="https://www.facebook.com/aucoeurdelenfance40" target="_blank"><img id="facebook_pic" src="../../assets/imgs/facebook.png" alt="le logo facebook" /></Link></div>
                          <div id="twitter"><img id="twitter_pic" src="../../assets/imgs/twitter.png" alt="le logo twitter" /></div>
                     </div>                  
                 </div>
-                <div><img id="logofooter" src="../../assets/imgs/logo.png" alt="le logo" /></div>
+                <img id="logofooter" src="../../assets/imgs/logo.png" alt="le logo" />
                 <div id="address">
                     <div id="contact_title">Nous contacter</div>
                     <div class="address_text">EMAIL: aucoeurdelenfnace-ass@gmail.com</div>
@@ -22,11 +22,11 @@ function Footer () {
                 </div>
             </div>
             <div id="footer_legal">
-                <div class="legal_mentions"><Link to="/legalmentions">Copyright</Link></div>
+                <div class="legal_mentions"><Link to="/legalmentions" target="_blank">Copyright</Link></div>
                 <div class="legal_mentions"> | </div>
-                <div class="legal_mentions"><Link to="/legalmentions">Mentions légales</Link></div>
+                <div class="legal_mentions"><Link to="/legalmentions" target="_blank">Mentions légales</Link></div>
                 <div class="legal_mentions"> | </div>
-                <div class="legal_mentions"><Link to="/legalmentions">Gérer les cookies</Link></div>
+                <div class="legal_mentions"><Link to="/legalmentions" target="_blank">Gérer les cookies</Link></div>
             </div>
        </footer>
     )

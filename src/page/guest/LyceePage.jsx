@@ -12,112 +12,82 @@ const LyceePage = () => {
           </div>
 
           <div className="lyceeIntro">
-            <img className="PicPosition" src="../../assets/imgs/page-elementaire.jpg" alt="Le lycée" />
-            <div className="lyceePhotoTitle">Le Lycée: l'entrée dans le monde des adultes</div>
+            <img className="PicPosition" src="../../assets/imgs/page-lycee.jpg" alt="Le lycée" />
+            <div className="lyceePhotoTitle">LE LYCEE: le dossier Parcoursup</div>
             <div className="lyceeParagraphIntro">
                     <p>
-                     Votre enfant entre au collège et va commencer à apprendre à lire, à écrire, à compter... <br />
-                     Comment se déroulent ces apprentissages ? À quoi servent les évaluations ? <br />
-                     Comment l'aider à faire ses devoirs ? Vous trouverez dans cette rubrique des réponses à vos questions et 
-                     des paroles d'experts pour vous aider à y voir plus clair.
+                    Comment bien remplir son dossier Parcoursup et gérer les différentes phases d'inscription et de validation de 
+                    la plateforme ? Retrouvez tous les conseils de Frédérique Alexandre-Bailly, directrice générale de l’Onisep.
                     </p>
             </div>
           </div>        
 
           <div className="sujetstyle">
-            <h3>Le rassurer</h3>
+            <h3>Quelles sont les nouveautés apportées à Parcoursup pour 2023 ?</h3>
           </div>
           <p className="paragraphStyle">
-            Alain Sotto, neuropédagogue, fondateur du site cancres.com et auteur de Le beau métier de parent et Donner envie d’apprendre 
-            (Le Livre de poche)<br /><br />
-            On le sait, la peur de l’échec est catastrophique. Sous le stress, le cerveau coupe le contact avec les connaissances, 
-            il bascule dans l’émotionnel. Par ailleurs, si l’enfant est stressé, il va mal lire la consigne. <br />
-            La petite voix intérieure qui va lui seriner que c’est compliqué ou qu’il va rater aura toujours le dessus sur 
-            le message délivré par la consigne. <br />
-            Donc il faut que l’élève se force à une sorte de yoga intérieur, à savoir ne pas se précipiter sur l’énoncé
-            mais le lire et le relire jusqu’à ce qu’il puisse se le répéter correctement dans sa tête. <br />
-            Il se remet alors en lien avec son cortex et à partir de là, il peut commencer son contrôle.<br /><br />
+          <ul>
+            <li>Les notes des spécialités sont désormais intégrées à Parcoursup et sont donc examinées dans les candidatures des élèves ;</li>
+            <li>Une nouvelle présentation et des fiches formations plus claires ;</li>
+            <li>Un moteur de recherche rénové plus puissant ;</li>
+            <li>Chaque fiche formation précise plus clairement le type de certification des diplômes. Les candidats voient ainsi si c’est un diplôme national. Ce point est primordial pour les parents qui ne savent pas assez qu’un diplôme national de licence est nécessaire pour postuler en Master ensuite ;</li>
+            <li>Un rapport d’analyse des candidatures de l’année n-1 avec des notes de lecture ;</li>
+            <li>Un onglet "Contacts et échanges" permet d’entrer en relation avec des étudiants « ambassadeurs » et les établissements ou encore avec le référent handicap ;</li>
+            <li>Les fiches indiquent avec précision les critères de sélection examinés par chaque établissement dans les candidatures.</li>
+          </ul>
 
-            Brigitte Prot, psychopédagogue, auteure de J’suis pas motivé, je fais pas exprès ! (éd. L’Harmattan) <br /><br />
-            Première règle : ne pas concentrer les révisions la veille. Il est au contraire important d’établir des plannings 
-            dès que la date du contrôle est connue. <br />
-            Travailler régulièrement est le meilleur moyen pour l’enfant de se rassurer. Il est essentiel aussi de donner une 
-            limite de temps à ses révisions.<br />
-            Pour l’enfant stressé, la peur de l’échec peut devenir obsessionnelle et tout envahir, au mépris des autres devoirs 
-            à faire et du travail en classe. Par ailleurs, le cerveau est bien plus efficace et la concentration bien meilleure 
-            quand on assigne une fin au travail à faire. Mais il ne faut pas quantifier ce travail de manière trop rigide. <br />
-            Il faut plutôt évaluer avec son enfant le temps que peuvent lui prendre ses révisions. <br />
-            Cela le responsabilise et le rend acteur de ses apprentissages.
           </p>
           <div className="sujetstyle">
-            <h3>Le motiver</h3>
+            <h3>Quels conseils donneriez-vous aux parents pour aider leurs enfants à formuler leurs vœux dans Parcoursup ?</h3>
           </div>
           <p className="paragraphStyle">
-            Brigitte Prot<br />
-            Il faut absolument l’inciter à se questionner sur le sens de ces évaluations et lui demander :<br />
-            tu penses que ça sert à quoi ? <br />
-            Le laisser réfléchir à cette question, c’est lui permettre de réaliser la représentation 
-            qu’il a de ces évaluations. Puis, il est important de lui fournir une réponse, lui expliquer que, sans évaluation, 
-            il n’aurait aucun repère de ses progressions, que c’est ainsi qu’on motive aussi les élèves à travailler, 
-            à apprendre et donc à grandir. <br />Et puis n’oublions pas que réussir, c’est gratifiant.<br /><br />
-
-            Alain Sotto<br />
-            Une mauvaise note est toujours une mauvaise nouvelle. Plutôt que de fondre sur son enfant pour le morigéner, 
-            il faut le questionner sur ce qu’il a ressenti quand il a reçu cette mauvaise note et partager son propre vécu d’élève. <br />
-            C’est ainsi que l'enfant se sentira accueilli et écouté et que s’instaurera une vraie communication autour de l’école
-            entre enfant et parents.
+            <ul>
+              <li><b>Il faut s’armer de patience car les choix des adolescents varient beaucoup ! </b>Il faut les laisser réfléchir et ne pas penser à leur place. Il faut surtout les encourager à se renseigner un maximum, à aller aux journées portes ouvertes et à discuter avec les étudiants pour mieux percevoir les choses ;</li>
+              <li><b>Il faut également les aider à se poser les bonnes questions : </b>« Est-ce que ces études vont me convenir ? Ai-je une chance d’être pris ? » Il ne faut pas laisser un adolescent choisir uniquement des filières sélectives et enfin, ne jamais formuler un voeu qu’il ne voudra pas confirmer ensuite ;</li>
+              <li><b>Les parents peuvent par ailleurs aider leurs enfants à prendre conscience du mode de vie qui accompagnera leur choix. </b>Il faut examiner pour cela le lieu, le budget, les modalités et l’organisation du travail, l’autonomie nécessaire, l’éloignement géographique...</li>
+              <li><b>Enfin, je conseille surtout d’essayer de "déstresser" les futurs étudiants </b>face à leurs choix qu’ils pensent faire pour « toute une vie » ! Leur vie sera pleine d’opportunités professionnelles différentes. Les adolescents d’aujourd’hui seront amenés à beaucoup changer, parfois dès leur première année d’étude, et il existe beaucoup de passerelles possibles entre les différents cursus ;</li>
+              <li><b>Dernier conseil  pour les parents : </b>enregistrez bien votre numéro de portable en plus de celui de votre enfant dans les dossiers Parcoursup afin d’être également averti en temps réel des réponses ou questions éventuelles des établissements. Les adolescents ne sont pas toujours réactifs au bon moment…</li>
+            </ul>
           </p>
           <div className="sujetstyle">
-            <h3>Le responsabiliser</h3>
+            <h3>Comment optimiser au maximum son dossier Parcoursup ?</h3>
           </div>
           <p className="paragraphStyle">
-            Brigitte Prot<br />
-            Il faut être là pour superviser le travail et contrôler qu’il a bien été fait, mais laisser au maxi-mum l’enfant 
-            être acteur de ses apprentissages pour le rendre le plus autonome possible.<br />
-            Avant qu’il se mette au travail, il faut simplement lui dire que, s’il a besoin d’aide, il peut compter sur notre soutien.<br />
-            Mais il est important de le laisser venir de lui-même solliciter cette aide si besoin.<br /><br />
-
-            Alain Sotto<br />
-            Il est important de l’aider à se projeter. <br />
-            Lui dire : ce qu’on va te dire en classe va te servir dans quelques jours, quand tu auras les évaluations. <br />
-            On s’est rendu compte que les élèves qui réussissent sont ceux qui arrivent à mobiliser leur imaginaire pour se projeter.<br />
-            Un peu comme celui qui entendant une bonne blague et s’imaginant la raconter plus tard à son tour se met, instantanément, 
-            à la retenir dans sa tête pour pouvoir la restituer.
+            Il faut être attentif à plusieurs points importants  :
+            <ul>
+              <li><b>Bien équilibrer le niveau des demandes</b> et ne pas mettre tous ses œufs dans le même panier !</li>
+              <li><b>Essayer de remplir toutes les cases, </b>même si un choix intéresse moins l’élève, mais toujours en évitant de mettre des choix irréalistes ;</li>            
+              <li><b>Bien motiver les projets de formation qui sont vraiment lus par les établissements </b>et qui peuvent faire la différence entre deux dossiers. Ces projets aident aussi l’élève à confirmer ses envies ;</li>
+              <li><b>Laisser votre enfant écrire lui-même la lettre de motivation, </b>mais la relire pour l’aider à l'affiner et pour éviter les fautes !</li>
+              <li><b>Prendre des notes pendant la phase de recherche sur les établissements </b>pour s’y retrouver plus facilement plus tard lors de la phase des choix finaux. Les élèves sont souvent stressés, les parents aussi, et leurs notes permettront de se rappeler rapidement les points importants.</li>
+            </ul>
           </p>  
-
           <div className="sujetstyle">
-            <h3>L'entrainer</h3>
+            <h3>Comment bien gérer la phase d’acceptation des choix ?</h3>
           </div>
           <p className="paragraphStyle">
-            Alain Sotto<br />
-            En maths, on peut se faire aider par des vidéos qui reprennent exactement les programmes scolaires. <br />
-            L’important est de s’entraîner tous les jours jusqu’à ce que l’enfant réussisse à restituer la leçon tout seul. 
-            Les maths demandent vraiment un entraînement quotidien. <br />
-            Quant à la dictée préparée, souvent l’enfant apprend les mots par coeur. <br />
-            On sait qu’avec cette méthode, ces mots seront aussi vite oubliés. Il faut, au contraire, installer une pédagogie de la
-            mémorisation, autrement dit, analyser le mot. <br />
-            Par exemple : pourquoi le mot éléphant peut poser problème ? Il faut se souvenir que le son « f » s’écrit « ph » et qu’à la
-            fin il y a un « t » parce qu’on dit aussi éléphante ou éléphanteau. <br />
-            N’oublions pas non plus que le mot est d’abord un son que l’on transcrit ensuite. Pour être su, un mot doit
-            d’abord être dit. <br /><br />
-
-            Brigitte Prot<br />
-            On peut entraîner son enfant mais sans le surcharger avec trop de travail supplémentaire.<br /> 
-            J’ai entendu certains enfants me dire : « je ne veux plus réviser avec mes parents parce qu’ils me donnent trop de travail 
-            à faire, beaucoup plus que la maîtresse. »
+          Il est nécessaire de ne pas se presser dans cette phase redoutée. L’élève doit garder ses envies à l’esprit et 
+          relire ses notes pour mieux s’y retrouver. Il ne faut pas avoir peur de laisser un choix en attente tant qu’on n’est pas sûr. 
+          Il faut savoir garder son sang-froid.
+          </p>  
+          <div className="sujetstyle">
+            <h3>Comment fonctionne l’algorithme de Parcoursup ? Est-ce différent selon les écoles où l’on postule ?</h3>
+          </div>
+          <p className="paragraphStyle">
+          Il n’y a pas d’algorithme intégré à Parcoursup, chaque établissement a ses propres critères de sélections 
+          qui sont précisés dans leurs fiches.
+          </p>  
+          <div className="sujetstyle">
+            <h3>Est-ce que les universités sont toujours sectorisées ?</h3>
+          </div>
+          <p className="paragraphStyle">
+          Elles sont sectorisées par académie, sauf en Ile-de-France où les élèves des trois académies de la région, Paris, Créteil et Versailles, peuvent postuler partout. 
+          Il y a également un quota de dossiers acceptés hors académie.
           </p>
           <div className="greenArea">
-            <div className="greenAreaTitle">Ne pas se focaliser sur les notes</div>
+            <div className="greenAreaTitle">Numéro vert Parcoursup (appel gratuit)</div>
             <p className="greenAreaPragraph">
-                Dans les textes officiels, les évaluations en primaire ne sont plus notées, mais indiquent si les compétences évaluées 
-                sont acquises, en cours d’acquisition ou non acquises. « Cela permet de garder à l’esprit que l’acquisition d’une compétence 
-                se fait graduellement », explique Séverine Bonaric-Gros, enseignante à l’école Sainte-Geneviève, à Montpellier (34). 
-                <br /><br />
-                « L’évaluation par compétences reconnaît à chacun la possibilité de faire des erreurs et d’apprendre à son rythme.
-                Et enfin d’être acteur de son évaluation. », complète-t-elle. L’enfant qui n’est plus stressé, sait ce qu’il doit améliorer. 
-                L’enseignante utilise l’outil Pidapi, de l’Icem 34, pour évaluer ses élèves. <br />
-                L’enfant obtient des ceintures de couleur au fur et à mesure de ses apprentis-sages et acquisitions. Une façon motivante 
-                et optimiste d’évaluer les élèves.
+            0 800 400 070
             </p>
           </div>
       <Footer />

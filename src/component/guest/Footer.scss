@@ -1,6 +1,6 @@
 footer {
     background-color:#8C6384;
-    height: 200px;   
+    height: 170px;   
     margin-top: 5%;
 }
 
@@ -76,13 +76,18 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    footer {
+        padding: 10px;
+        height: 350px;
+    }
+    .logofooter {
+        border-radius: 20px;
+    }
     #footer_contact {
         display: flex;
         flex-direction: column;        
     }
-    #logofooter {
-        display: none;
-    }
+
     #socialmedias_gl {
         margin: auto;
     }
@@ -114,11 +119,9 @@ footer {
         margin-top: 1.5rem;
         width: 150px;
     }
-    footer {
-        height: 250px;
-    }
+
     .legal_mentions {
-        // padding-right: 2px;   
+        padding-right: 0.5rem;   
         font-size: 13px;
         justify-content: space-between;
     }

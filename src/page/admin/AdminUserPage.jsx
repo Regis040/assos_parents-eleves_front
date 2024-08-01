@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState } from "react";
 import HeaderAdmin from "../../component/admin/HeaderAdmin";
+import Footer from "../../component/guest/Footer";
 import { jwtDecode } from "jwt-decode";
 import { useVerifyIfUserIsLogged } from "../../utilis/security-utilis";
 import './AdminUserPage.scss';
@@ -56,6 +57,7 @@ const AdminUserPage = () => {
             ): (
                 <p>En cours de chargement</p>
             )}
+            <Footer />
         </>
     ) 
 }

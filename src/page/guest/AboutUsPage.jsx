@@ -9,7 +9,7 @@ const AboutUsPage = () => {
       <Header />
       <div className="soustitre">
                 <h2>Qui sommes-nous ?</h2>
-          </div>
+      </div>
       <p className="paragraphStyle">
         Nous sommes une association de parents d'élèves, à but non lucratif, très récente puisque elle a vu le jour en 2021.<br /><br />
 
@@ -20,7 +20,6 @@ const AboutUsPage = () => {
       <div className="sujetstyle">
             <h3>LES PRIORITES DE L'ASSOCIATION "AU COEUR DE L'ENFANCE</h3>
       </div>
-
       <div className="objectifsAboutUs">
         <ul>
           <li>PLACER L'INTERET DE L'ENFANT AU COEUR DES PRIORITES</li>
@@ -35,7 +34,6 @@ const AboutUsPage = () => {
       <div className="sujetstyle">
             <h3>PORTFOLIO DE L'ASSOCIATION "AU COEUR DE L'ENFANCE"</h3>
       </div>
-
       <div className="aboutusManagersPics">
         <div><img  className="aboutusManagerPic"  src="../../assets/imgs/julien.png" alt="classe maternelle" /></div>
         <div><img  className="aboutusManagerPic"  src="../../assets/imgs/olivia.png" alt="classe maternelle" /></div>

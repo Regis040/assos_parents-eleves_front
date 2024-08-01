@@ -1,12 +1,16 @@
 import { Link, useNavigate} from "react-router-dom";
-// import { jwtDecode } from "jwt-decode";
+import { jwtDecode } from "jwt-decode";
 import "./Header.scss";
 
 const Header = () => {
-
   const token = localStorage.getItem("jwt");
-
   const navigate = useNavigate();
+
+  let isAdmin 
+  if (token) {
+    const decodedToken = jwtDecode(token);
+    isAdmin = decodedToken.RoleId !== 3;
+  }
 
   const handleLogout = () => {
     // Je dégage le token du local storage
@@ -19,21 +23,27 @@ const Header = () => {
     <>      
         <div id="headerstyle">
           <div id="logoheader">
-            <img id="logo" src="../../assets/imgs/logo.png" alt="le logo" />
+            <img id="logo" src="../assets/imgs/logo.png" alt="le logo" />
           </div>          	
           <label for="toggle">☰</label>
           <input type="checkbox" id="toggle" />
           <ul id="navheader">                       
             <li><Link to="/">Accueil</Link></li>
             <li>|</li>
-            <li><Link to="/">Actualités</Link></li>
+            <li><Link to="/#news-section">Actualités</Link></li>
             <li>|</li>
-            <li><Link to="/">Les établissements</Link></li>
+            <li><Link to="/#schools-section">Les établissements</Link></li>
             <li>|</li>
             <li><Link to="/aboutus">A propos de nous</Link></li>
             <li>|</li>
             <li><Link to="/register">S'inscrire</Link></li>
             <li>|</li>
+            {isAdmin && (
+              <>
+                <li><Link to="/admin">Admin</Link></li>
+                <li>|</li>
+              </>
+            )}
             {token ? (
               <li>
                 <button onClick={handleLogout}>Se déconnecter</button>

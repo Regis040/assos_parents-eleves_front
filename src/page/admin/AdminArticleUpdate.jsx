@@ -45,13 +45,13 @@ const AdminArticleUpdate = () => {
     if (updateArticleResponse.status === 201) {
       setMessage("Mise à jour éffectuée");
     } else {
-      setMessage("Erreur");
+      setMessage("Vous n'avez pas l'autorisation pour modifier cet élément");
     }
   };
 
   return (
     <>
-      <HeaderAdmin />
+      <HeaderAdmin />     
       <div className="soustitre">
         <h2>Vous êtes connecté en tant qu'admin : Mettre à jour le sujet sélectionné </h2>
       </div>
@@ -61,7 +61,7 @@ const AdminArticleUpdate = () => {
             <form className="updateFormPosition" onSubmit={handleUpdateArticle}>
              <div>
                <label>
-                  Nom : 
+                  Nom :  
                   <input type="text" name="articletitle" defaultValue={article.articletitle} />
                </label>
               </div>

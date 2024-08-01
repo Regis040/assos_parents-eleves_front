@@ -1,10 +1,10 @@
 @import '../../sass/variables';
-// @import '../../sass/typo';
+@import '../../sass/typo';
 
-@font-face {
-  font-family: "RobotoRegular";
-  src: url(../../../public/assets/typo/Roboto/Roboto-Regular.ttf);    
-}
+// @font-face {
+//   font-family: "RobotoRegular";
+//   src: url(../../../public/assets/typo/Roboto/Roboto-Regular.ttf);    
+// }
 
 #headerstyle {
   display: flex;
@@ -108,8 +108,7 @@
     width: 160px;
     height: auto;
   }
-  #headerstyle label 
-  {
+  #headerstyle label   {
       width: 30px;
       display: flex;
       justify-content: center;
@@ -123,7 +122,7 @@
     display: none;
     flex-direction: column;
     padding: 0;
-    height: 400px;
+    height: 420px;
     width: 200px;
   }
   #navheader a {

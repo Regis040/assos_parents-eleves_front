@@ -2,7 +2,7 @@ import "./Schools.scss";
 
 function Schools () {
     return (
-    <section id="http://localhost:3001/#lienchools">
+    <section id="schools-section">
         <div class="soustitre">
             <h2>Les établissements scolaires</h2>
         </div>

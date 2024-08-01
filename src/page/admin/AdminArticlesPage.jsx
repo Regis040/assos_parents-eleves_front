@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import HeaderAdmin from "../../component/admin/HeaderAdmin";
+import Footer from "../../component/guest/Footer";
 import { jwtDecode } from "jwt-decode";
 import { Link } from "react-router-dom";
 
@@ -19,7 +20,6 @@ const AdminArticlesPage = () => {
     })();
   }, []);
 
-
  useEffect(() => {
     (async () => {
       const commentsResponse = await fetch("http://localhost:3000/comments");
@@ -33,11 +33,9 @@ const AdminArticlesPage = () => {
     await fetch("http://localhost:3000/articles/" + articleId, {        
       method: "DELETE",    //   
       headers: { Authorization: "Bearer " + token },
-    });
-    
+    });    
     const articlesResponse = await fetch("http://localhost:3000/articles");
-    const articlesResponseData = await articlesResponse.json();
-   
+    const articlesResponseData = await articlesResponse.json();   
     setArticles(articlesResponseData);
   };
 
@@ -47,32 +45,30 @@ const AdminArticlesPage = () => {
       await fetch(`http://localhost:3000/comments/${commentId}`, {
         method: "DELETE",
         headers: { Authorization: "Bearer " + token },
-      });
-  
+      });  
       const commentsResponse = await fetch("http://localhost:3000/comments");
       const commentsResponseData = await commentsResponse.json();
-  console.log(commentsResponseData)
+  // console.log(commentsResponseData)
       setComments(commentsResponseData);
     } catch (error) {
       console.error("Error deleting comment:", error);
     }
   };
-  console.log(articles)
+  
   return (
     <>
       <HeaderAdmin />
       <div className="soustitre">
         <h2>Vous êtes connecté en tant qu'admin : gérer les sujets et leurs commentaires </h2>
       </div>
-            <div id="createArticle">
+      <div id="createArticle">
         <Link to="/admin/articles/create">Créer un nouvel article</Link>
       </div>
       {articles ? (
         <>
           {articles.map((article) => {
             return (
-                <article class="articlesdesign">
-                    
+                <article class="articlesdesign">                    
                     <h2 className="subjetsStyle">{article.articlebody}</h2>  
                      {decodedToken.data.role !==3 && (
                         <button onClick={(event) => handleDeleteArticle(event, article.id)}>Supprimer ce sujet</button>
@@ -80,7 +76,6 @@ const AdminArticlesPage = () => {
                      {decodedToken.data.role !==3 && (
                        <Link to={`/admin/articles/update/${article.id}`}>Mettre à jour ce sujet</Link>  
                      )}
-
                                   
                         <h3 className="commentStyleTitle">- LES COMMENTAIRES -</h3>
                          {comments ? (
@@ -99,8 +94,6 @@ const AdminArticlesPage = () => {
                             ) : (
                               <p>En cours de chargement</p>
                             )} 
-                       
-
                 </article>
             );
           })}
@@ -108,10 +101,8 @@ const AdminArticlesPage = () => {
       ) : (
         <p>En cours de chargement</p>
       )}
-
-
+      <Footer />
     </>
   );
 };
-
 export default AdminArticlesPage;

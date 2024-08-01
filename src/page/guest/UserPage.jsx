@@ -5,7 +5,6 @@ import { useVerifyIfUserIsLogged } from "../../utilis/security-utilis";
 import Footer from '../../component/guest/Footer'
 import Header from '../../component/guest/Header'
 
-
 const UserPage = () => {
 
         useVerifyIfUserIsLogged();
@@ -28,8 +27,7 @@ const UserPage = () => {
           await fetch(`http://localhost:3000/users/${decodedToken.dataId}`, {
             method: "DELETE",
             headers: { Authorization: "Bearer " + token },
-          });
-      
+          });      
           const userResponse = await fetch("http://localhost:3000/users");
           const userResponseData = await userResponse.json();
           setUser(userResponseData);
@@ -45,8 +43,7 @@ const UserPage = () => {
             body: JSON.stringify({ newPassword, userId: decodedToken.dataId })
           });
           setUser((prevUser) => ({
-            ...prevUser,
-            
+            ...prevUser,            
           }));          
         };
     
@@ -54,8 +51,8 @@ const UserPage = () => {
         <>
             <Header/>
             <main>
-            <h2>Votre espace personnel</h2>
-            {user ? (
+              <h2>Votre espace personnel</h2>
+              {user ? (
                     <article>
                       <div>
                         <h2 className="user">{user.username}</h2>
@@ -66,30 +63,28 @@ const UserPage = () => {
                       <div>
                         <p>{user.password} </p>
                         {decodedToken.data.role !== 3 && (
-                         <>
-                         <div>
-                           <label htmlFor="newPassword">New Password:</label>
-                           <input
-                             type="password"
-                             className="newPassword"
-                             value={newPassword}
-                             onChange={(e) => setNewPassword(e.target.value)}
-                           />
-                         </div>
-                         <button onClick={handleUpdateUser}>Modifier</button>
-                       </>
-                     )}
+                          <>
+                            <div>
+                              <label htmlFor="newPassword">Nouveau mot de passe:</label>
+                              <input
+                                type="password"
+                                className="newPassword"
+                                value={newPassword}
+                                onChange={(e) => setNewPassword(e.target.value)}
+                              />
+                            </div>
+                            <button onClick={handleUpdateUser}>Modifier</button>
+                          </>
+                        )}
                       </div>
                         
                     </article>
                 ) : (
                     <p>En cours de chargement</p>
-                )}
-                
+              )}                
             </main>
             <Footer/>
         </>
     )
 }
-
-export default UserPage
+export default UserPage;

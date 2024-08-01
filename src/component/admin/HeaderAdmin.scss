@@ -24,12 +24,12 @@
     list-style: none;
     padding: 5px;
     cursor: pointer;   
-    color: #8C6384;
+    color: $purple-dark-color;
 }
 
 #navheaderadminposition  a { 
   text-decoration: none;
-  color: #8C6384;
+  color: $purple-dark-color;
   position: relative;
 }
 
@@ -40,7 +40,7 @@
   left: 50%; /* Commencer du centre */
   width: 0; /* Largeur initiale nulle */
   height: 2px; /* Hauteur de la barre */
-  background-color: #8C6384; /* Couleur de la barre */
+  background-color: $purple-dark-color; /* Couleur de la barre */
   transition: width 0.3s ease-out, left 0.3s ease-out; /* Animation de la largeur et de la position */
 }
 
@@ -49,21 +49,21 @@
   left: 0; /* Déplacer la barre vers la gauche pour partir des extérieurs */
 }
   .headeradmin button {
-    background-color:#DDC9D8;
-    color: #8C6384;
+    background-color:$purple-light-color;
+    color: $purple-dark-color;
     border-radius: 20px;
-    padding: 5px;
     border: none;
     cursor: pointer;
+    margin-top: 0%;
   }
   .headeradmin button:hover {
-    background-color:#8C6384;
+    background-color:$purple-dark-color;
     color: white;
   }
 
 #titleAdmin{
   font-size: 1.5rem;
-  color: #8C6384;
+  color: $purple-dark-color;
 }
 h1, h2 {
   text-align: center;

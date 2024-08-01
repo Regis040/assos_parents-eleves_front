@@ -16,24 +16,24 @@ const AdminCommentCreate = () => {
             content: content
           };
         
-          const commentToCreateJson = JSON.stringify(commentToCreate);
+        const commentToCreateJson = JSON.stringify(commentToCreate);
 
-          const token = localStorage.getItem("jwt");
+        const token = localStorage.getItem("jwt");
 
-          const createCommentResponse = await fetch("http://localhost:3000/comments", {
+        const createCommentResponse = await fetch("http://localhost:3000/comments", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
               Authorization: "Bearer " + token, // clé : valeur
             },
             body: commentToCreateJson,
-          });
+        });
 
-          if (createCommentResponse.status === 201) {
+        if (createCommentResponse.status === 201) {
             setMessage("Le commentaire est créé !")
-          } else {
+        } else {
             setMessage("Erreur !")
-          }
+        }
 
     }
     return (

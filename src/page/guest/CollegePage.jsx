@@ -12,114 +12,107 @@ const CollegePage = () => {
           </div>
 
           <div className="collegeIntro">
-            <img className="PicPosition" src="../../assets/imgs/page-elementaire.jpg" alt="Le college" />
-            <div className="collegePhotoTitle">LE COLLEGE: LE DEBUT DE L'AUTONOMIE</div>
+            <img className="PicPosition" src="../../assets/imgs/page-college.jpg" alt="Le college" />
+            <div className="collegePhotoTitle">LE COLLEGE: Le début de l'autonomie</div>
             <div className="collegeParagraphIntro">
                     <p>
-                     Votre enfant entre au collège et va commencer à apprendre à lire, à écrire, à compter... <br />
-                     Comment se déroulent ces apprentissages ? À quoi servent les évaluations ? <br />
-                     Comment l'aider à faire ses devoirs ? Vous trouverez dans cette rubrique des réponses à vos questions et 
-                     des paroles d'experts pour vous aider à y voir plus clair.
+                    Votre enfant entre en 6e et va devoir s'adapter à un nouveau rythme et souvent un nouvel établissement. 
+                    La classe de 6e va lui permettre une entrée progressive dans les savoirs et enseignements du collège, 
+                    qu'il va approfondir jusqu'en classe de 3e. Comment l'aider à s'organiser, à travailler et à réviser ? 
+                    Vous trouverez dans cette rubrique des réponses à vos questions et des paroles d'experts pour vous aider à y voir plus clair.
+
                     </p>
             </div>
           </div>        
 
           <div className="sujetstyle">
-            <h3>Le rassurer</h3>
+            <h3>Étiqueter soigneusement son matériel</h3>
           </div>
           <p className="paragraphStyle">
-            Alain Sotto, neuropédagogue, fondateur du site cancres.com et auteur de Le beau métier de parent et Donner envie d’apprendre 
-            (Le Livre de poche)<br /><br />
-            On le sait, la peur de l’échec est catastrophique. Sous le stress, le cerveau coupe le contact avec les connaissances, 
-            il bascule dans l’émotionnel. Par ailleurs, si l’enfant est stressé, il va mal lire la consigne. <br />
-            La petite voix intérieure qui va lui seriner que c’est compliqué ou qu’il va rater aura toujours le dessus sur 
-            le message délivré par la consigne. <br />
-            Donc il faut que l’élève se force à une sorte de yoga intérieur, à savoir ne pas se précipiter sur l’énoncé
-            mais le lire et le relire jusqu’à ce qu’il puisse se le répéter correctement dans sa tête. <br />
-            Il se remet alors en lien avec son cortex et à partir de là, il peut commencer son contrôle.<br /><br />
-
-            Brigitte Prot, psychopédagogue, auteure de J’suis pas motivé, je fais pas exprès ! (éd. L’Harmattan) <br /><br />
-            Première règle : ne pas concentrer les révisions la veille. Il est au contraire important d’établir des plannings 
-            dès que la date du contrôle est connue. <br />
-            Travailler régulièrement est le meilleur moyen pour l’enfant de se rassurer. Il est essentiel aussi de donner une 
-            limite de temps à ses révisions.<br />
-            Pour l’enfant stressé, la peur de l’échec peut devenir obsessionnelle et tout envahir, au mépris des autres devoirs 
-            à faire et du travail en classe. Par ailleurs, le cerveau est bien plus efficace et la concentration bien meilleure 
-            quand on assigne une fin au travail à faire. Mais il ne faut pas quantifier ce travail de manière trop rigide. <br />
-            Il faut plutôt évaluer avec son enfant le temps que peuvent lui prendre ses révisions. <br />
-            Cela le responsabilise et le rend acteur de ses apprentissages.
+          Dès la sixième, pour une seule discipline, les élèves ont parfois deux, voire trois, cahiers avec, de surcroît, 
+          plusieurs entrées différentes. Certains enseignants exigent un classeur subdivisé en plusieurs parties. 
+          Afin de réduire les possibilités d’erreur, inscrivez très lisiblement sur la couverture de chaque cahier ou classeur 
+          le nom de la discipline et procurez-lui des intercalaires où vous noterez avec lui sur chaque onglet le nom de la partie 
+          ou de la sous-matière.
           </p>
           <div className="sujetstyle">
-            <h3>Le motiver</h3>
+            <h3>Alléger le poids du cartable</h3>
           </div>
           <p className="paragraphStyle">
-            Brigitte Prot<br />
-            Il faut absolument l’inciter à se questionner sur le sens de ces évaluations et lui demander :<br />
-            tu penses que ça sert à quoi ? <br />
-            Le laisser réfléchir à cette question, c’est lui permettre de réaliser la représentation 
-            qu’il a de ces évaluations. Puis, il est important de lui fournir une réponse, lui expliquer que, sans évaluation, 
-            il n’aurait aucun repère de ses progressions, que c’est ainsi qu’on motive aussi les élèves à travailler, 
-            à apprendre et donc à grandir. <br />Et puis n’oublions pas que réussir, c’est gratifiant.<br /><br />
-
-            Alain Sotto<br />
-            Une mauvaise note est toujours une mauvaise nouvelle. Plutôt que de fondre sur son enfant pour le morigéner, 
-            il faut le questionner sur ce qu’il a ressenti quand il a reçu cette mauvaise note et partager son propre vécu d’élève. <br />
-            C’est ainsi que l'enfant se sentira accueilli et écouté et que s’instaurera une vraie communication autour de l’école
-            entre enfant et parents.
-          </p>
-          <div className="sujetstyle">
-            <h3>Le responsabiliser</h3>
-          </div>
-          <p className="paragraphStyle">
-            Brigitte Prot<br />
-            Il faut être là pour superviser le travail et contrôler qu’il a bien été fait, mais laisser au maxi-mum l’enfant 
-            être acteur de ses apprentissages pour le rendre le plus autonome possible.<br />
-            Avant qu’il se mette au travail, il faut simplement lui dire que, s’il a besoin d’aide, il peut compter sur notre soutien.<br />
-            Mais il est important de le laisser venir de lui-même solliciter cette aide si besoin.<br /><br />
-
-            Alain Sotto<br />
-            Il est important de l’aider à se projeter. <br />
-            Lui dire : ce qu’on va te dire en classe va te servir dans quelques jours, quand tu auras les évaluations. <br />
-            On s’est rendu compte que les élèves qui réussissent sont ceux qui arrivent à mobiliser leur imaginaire pour se projeter.<br />
-            Un peu comme celui qui entendant une bonne blague et s’imaginant la raconter plus tard à son tour se met, instantanément, 
-            à la retenir dans sa tête pour pouvoir la restituer.
-          </p>  
-
-          <div className="sujetstyle">
-            <h3>L'entrainer</h3>
-          </div>
-          <p className="paragraphStyle">
-            Alain Sotto<br />
-            En maths, on peut se faire aider par des vidéos qui reprennent exactement les programmes scolaires. <br />
-            L’important est de s’entraîner tous les jours jusqu’à ce que l’enfant réussisse à restituer la leçon tout seul. 
-            Les maths demandent vraiment un entraînement quotidien. <br />
-            Quant à la dictée préparée, souvent l’enfant apprend les mots par coeur. <br />
-            On sait qu’avec cette méthode, ces mots seront aussi vite oubliés. Il faut, au contraire, installer une pédagogie de la
-            mémorisation, autrement dit, analyser le mot. <br />
-            Par exemple : pourquoi le mot éléphant peut poser problème ? Il faut se souvenir que le son « f » s’écrit « ph » et qu’à la
-            fin il y a un « t » parce qu’on dit aussi éléphante ou éléphanteau. <br />
-            N’oublions pas non plus que le mot est d’abord un son que l’on transcrit ensuite. Pour être su, un mot doit
-            d’abord être dit. <br /><br />
-
-            Brigitte Prot<br />
-            On peut entraîner son enfant mais sans le surcharger avec trop de travail supplémentaire.<br /> 
-            J’ai entendu certains enfants me dire : « je ne veux plus réviser avec mes parents parce qu’ils me donnent trop de travail 
-            à faire, beaucoup plus que la maîtresse. »
-          </p>
+          Apporter le cahier de maths pour le cours d’histoire-géographie ou le livre d’anglais pour celui de français... 
+          Beaucoup d’élèves, au moins en début de sixième, sont victimes de ces confusions. Avec, à la clé, une bonne dose de stress 
+          quand ils s’aperçoivent de leur erreur. Résultat : beaucoup finissent par se charger d’un matériel inutile. « Comme je ne 
+          savais pas quels cahiers je devais apporter, j’ai préféré tout prendre ! », disent-ils volontiers. Ainsi, au moins au premier 
+          trimestre, prévoyez d’aider votre enfant à faire son cartable. Affichez au-dessus de son bureau un exemplaire de son
+           emploi du temps, en ajoutant pour chaque heure de cours le matériel à emporter.
           <div className="greenArea">
-            <div className="greenAreaTitle">Ne pas se focaliser sur les notes</div>
+            <div className="greenAreaTitle">Le carnet de correspondance</div>
             <p className="greenAreaPragraph">
-                Dans les textes officiels, les évaluations en primaire ne sont plus notées, mais indiquent si les compétences évaluées 
-                sont acquises, en cours d’acquisition ou non acquises. « Cela permet de garder à l’esprit que l’acquisition d’une compétence 
-                se fait graduellement », explique Séverine Bonaric-Gros, enseignante à l’école Sainte-Geneviève, à Montpellier (34). 
-                <br /><br />
-                « L’évaluation par compétences reconnaît à chacun la possibilité de faire des erreurs et d’apprendre à son rythme.
-                Et enfin d’être acteur de son évaluation. », complète-t-elle. L’enfant qui n’est plus stressé, sait ce qu’il doit améliorer. 
-                L’enseignante utilise l’outil Pidapi, de l’Icem 34, pour évaluer ses élèves. <br />
-                L’enfant obtient des ceintures de couleur au fur et à mesure de ses apprentis-sages et acquisitions. Une façon motivante 
-                et optimiste d’évaluer les élèves.
+            Contrairement à ce que craignent de nombreux parents, la plupart des élèves s’adaptent très rapidement aux nouvelles 
+            exigences du collège. Malgré tout, il est important d’être attentif, dès le départ, à ce qui pourrait être source 
+            de difficultés pour un enfant. Aux environs de Noël, il y aura, bien sûr, la rencontre parents-professeurs ainsi que 
+            le premier bulletin trimestriel. En attendant, il y a aussi le carnet de correspondance. Consultez-le chaque soir.
+             Grâce aux remarques consignées au jour le jour par les enseignants, vous aurez déjà une petite idée du profil de votre enfant.
+              Vous verrez très vite apparaître ce qui risque de gêner sa réussite. Le bavardage ? Une incapacité à se mettre au travail
+               en classe ? Des leçons non apprises ? Des exercices non faits à la maison ? Des oublis répétés de matériel ? 
+               Pour toutes ces remarques voir avec les enseignants concernés les remèdes à apporter.
             </p>
           </div>
+          </p>
+          <div className="sujetstyle">
+            <h3>Apprendre à planifier son travail</h3>
+          </div>
+          <p className="paragraphStyle">
+          Au collège, à quelques semaines de la remise des bulletins trimestriels, faute, bien souvent, 
+          d’un manque de concertation entre les enseignants, les contrôles ont tendance à se multiplier. 
+          Les emplois du temps, ensuite, sont loin d’être toujours équilibrés. Certains jours de la semaine, les disciplines 
+          nécessitant du travail à la maison s’accumulent. Or, peu d’élèves ont le réflexe d’anticiper. Ils se mettent à faire 
+          la veille un travail pour lequel ils disposaient, en réalité, de deux semaines et qui, d’ailleurs, aurait été d’autant
+           mieux réussi s’il avait été effectué en plusieurs étapes. Pour qu’il ne tombe pas dans ce piège, incitez, chaque week-end, 
+           votre enfant à établir un planning des activités à réaliser au cours de la semaine.
+          </p>  
+          <div className="sujetstyle">
+            <h3>Accorder de l'importance au cahier de textes</h3>
+          </div>
+          <p className="paragraphStyle">
+          De plus en plus de collèges proposent des cahiers de textes en ligne remplis par les enseignants. 
+          Le hic, c’est qu’ils ne sont pas toujours tenus à jour. Pour prendre connaissance du travail à réaliser à la maison, 
+          le cahier de textes ou l’agenda de l’élève reste donc l’outil incontournable. Encore faut-il qu’il soit bien lisible.
+           Comme il est souvent rempli en classe dans la précipitation, apprenez-à votre enfant à gagner du temps en abrégeant 
+           les mots les plus courants. Montrez-lui aussi comment le tenir, avec clarté, en écrivant bien la discipline et en séparant 
+           chacune d’elles par un trait.
+          </p>  
+          <div className="sujetstyle">
+            <h3>Utiliser les manuels scolaires</h3>
+          </div>
+          <p className="paragraphStyle">
+          Au cas où le collège utiliserait des manuels numériques, vérifiez que votre enfant a bien compris la manière de s’en servir. 
+          Consultez-les avec lui, dans leur ensemble, pour avoir une vision globale du programme de l’année. 
+          Faites-le également pour des manuels papier. Ils sont un complément indispensable au cours. 
+          Or, les collégiens ont tendance à en négliger l’utilisation. Pour apprendre une leçon, ils se contentent souvent du 
+          résumé inscrit dans le cahier ou le classeur, se privant du sens qu’ils pourraient donner aux mots en revoyant les documents 
+          (photos, schémas, graphiques, tableaux...) exploités avec le professeur lors du cours.
+          </p> 
+          <div className="greenArea">
+            <div className="greenAreaTitle">Comment consulter ses notes ?</div>
+            <p className="greenAreaPragraph">
+            Elles sont consultables en ligne. Prenez-en connaissance régulièrement sans vous alarmer inutilement. 
+            Un enfant n’est pas forcément en échec parce qu’il a raté un contrôle. D’ailleurs, rencontrer des difficultés fait 
+            aussi partie de l’apprentissage.
+            Faites confiance à l'équipe éducative. Si vous avez observé un dysfonctionnement dans le collège ou si vous avez une critique
+             à formuler vis-à-vis d’un enseignant, cherchez à rencontrer l’adulte concerné mais abstenez-vous de tout commentaire négatif 
+             devant votre enfant.
+            </p>
+          </div>
+          <div className="sujetstyle">
+            <h3>Comment survivre à la rentrée</h3>
+          </div>
+          <p className="paragraphStyle">
+          L'entrée d'un enfant en 6e nécessite une nouvelle organisation pour toute la famille. Entre un nouveau rythme, 
+          de nouveaux repères à acquérir et une exigence plus grande, c'est aussi un temps de questionnements et de doutes pour l'enfant. 
+          Comment vivre ce passage ? Comment accompagner son enfant dans cette nouvelle étape de sa vie ? Analyse et points de repères 
+          </p>
+
       <Footer />
     </>
   );

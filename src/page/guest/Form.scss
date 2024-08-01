@@ -5,15 +5,15 @@
 form {
     background-color: $formbgcolor;
     border-radius: 30px;
-    width: 320px;
+    width: 340px;
   }
 form h3{
   width: 100%;
-  background-color:#DDCEDA ;
+  background-color:$purple-light-color ;
   border-radius: 20px;
   padding: 1rem 0;
   text-align: center;
-  color: #8C6384;
+  color: $purple-dark-color;
 }
 label {
   display: block;
@@ -39,19 +39,19 @@ input {
   // margin-right: 2rem;
 }
 input[type="submit"] {
-  background-color: #DDCEDA;
-  color:#8C6384;
+  background-color: $purple-light-color;
+  color:$purple-dark-color;
   width: 100px;
   padding: 15px 0px;
   border-radius: 50px;
    cursor: pointer;
   // font-size: 16px;
-  border: 2px solid #8C6384;
+  border: 2px solid $purple-dark-color;
   position: relative;
   left: 200px;
 }
 
 input[type="submit"]:hover {
-  background-color: #8C6384;
+  background-color: $purple-dark-color;
   color: white;
 }

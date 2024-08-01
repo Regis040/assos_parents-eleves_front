@@ -13,7 +13,7 @@ const MaternellePage = () => {
 
           <div className="maternelleIntro">
             <img className="PicPosition" src="../../assets/imgs/page-maternelle.jpg" alt="classe maternelle" />
-            <div className="maternellePhotoTitle">MATERNELLE : une rentrée en douceur</div>
+            <div className="maternellePhotoTitle">LA MATERNELLE : une rentrée en douceur</div>
             <div className="maternelleParagraphIntro">
                     <p>Une première rentrée en maternelle sans pleurs ni inquiétudes, c’est le souhait de beaucoup de parents. Certains enfants, <br />
                     discrets ou réservés, se montrent un peu moins enthousiastes que d’autres. Comment aplanir les difficultés ?</p>

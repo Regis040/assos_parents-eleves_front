@@ -1,16 +1,17 @@
 
-// @import '../../sass/variables';
+@import '../../sass/variables';
 // @import '../../sass/typo';
 
 // Le bandeau : titre 2 et couleur de fond
 
 .soustitre {
-  background-color: #8C6384;
-  height: 75px;
+  background-color: $purple-dark-color;
+  height: 76px;
   width: 100%;
   margin: 0%;
   position: relative;  
-  margin-bottom: 2%;
+  margin-bottom: 1%;
+  padding-bottom: 1%;
 }
 .soustitre h2 {
   color:white;
@@ -34,7 +35,7 @@
   margin: 0 1%;
   // padding-bottom: 2rem;
   position: relative;  
-  border: 1px solid #8C6384;
+  border: 1px solid $purple-dark-color;
   border-radius: 30px;
  }
  .bloc_img_position{
@@ -49,7 +50,7 @@
   object-fit: contain;
  }
  .bloc_content {
-  background-color: #8C6384;
+  background-color: $purple-dark-color;
   width: 100%;
   text-align: center;
   color: #fff;
@@ -71,7 +72,7 @@
 .bloc_button {
   display: inline-block;
   padding: 5px 10px;
-  color: #8C6384;
+  color: $purple-dark-color;
   background-color: white;
   border-radius: 5px; 
   border: none; 
@@ -80,6 +81,7 @@
 .bloc_button:hover {
   background-color:#DDC9D8; /* couleur de fond au survol */
 }
+
 
 /* Requêtes média pour adaptabilité mobile */
 @media (max-width: 768px) {

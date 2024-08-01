@@ -1,14 +1,16 @@
+@import '../../sass/variables';
+
 // Zone d'introduction au sujet qui est l'école élementaire
 .PicPosition {
     margin-left: 5%;
 }
  .elementairePhotoTitle {
-    background-color: lightgrey;
+    background-color: $purple-light-color;
     width: 40%;
     padding: 30px;
     font-size: 30px;
-    color: #8C6384;
-    border: 1px solid #8C6384;
+    color: $purple-dark-color;
+    border: 1px solid $purple-dark-color;
     position: relative;
     left: 700px;
     top: -50px;   
@@ -16,26 +18,26 @@
 .elementaireParagraphIntro {
     width: 60%;
     margin-left: 10%;
-    border-left: 4px solid #8C6384;
+    border-left: 4px solid $purple-dark-color;
     padding: 0.1%;
     margin-bottom: 2%;
 }
 .elementaireParagraphIntro p {
     margin-left: 1%;
-    color: #8C6384;
+    color: $purple-dark-color;
     font-size: 20px;
 }
 
 // GreenArea
 .greenArea {
-    background-color: #D7FEAD;
+    background-color: $formbgcolor;
     width: 45%;
     margin: auto;
     margin-bottom: 1%;
     padding: 40px;
-    color: #8C6384;
+    color: $purple-dark-color;
     border-radius: 20px;
-    border: 1px solid #8C6384 ;
+    border: 1px solid $purple-dark-color ;
 }
 .greenAreaTitle{
     font-size: 20px;

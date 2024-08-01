@@ -1,3 +1,5 @@
+@import '../../sass/variables';
+
 .articlestyle {
     background-color:#fff;
     width: 100%;
@@ -7,14 +9,14 @@
     background-color: #fff;
     width: 80%;
     margin: auto;
-    color: #8C6384;
+    color: $purple-dark-color;
 }
 
 .sujetstyle {
     width: 100%;
-    background-color: #DDCEDA;
+    background-color: $purple-light-color;
     border-radius: 10px;
-    color: #8C6384;
+    color: $purple-dark-color;
     padding: 2%;
     margin: 0%;
 }
@@ -26,11 +28,11 @@
 }
 .h2style { 
     font-size: larger; 
-    color: #8C6384;   
+    color: $purple-dark-color;   
 }
 
 h4 {
-    color: #8C6384;
+    color: $purple-dark-color;
 }
     
 .formCommentPosition {

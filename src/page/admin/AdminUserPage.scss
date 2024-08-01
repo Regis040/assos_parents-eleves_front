@@ -1,7 +1,9 @@
+@import '../../sass/variables';
+
 #loggerstyle {
     width: 200px;
     height: 150px;
-    background-color:#D7FEAD;
+    background-color:$formbgcolor;
     margin: auto;
     margin-bottom: 30px;
     border-radius: 20px;
