@@ -40,9 +40,9 @@ const AdminArticleCreate = () => {
           });
    
           if (createArticleResponse.status === 201) {
-            setMessage("l'article est bien créé !")
+            setMessage("le sujet a bien été créé !")
           } else {
-            setMessage("Erreur !")
+            setMessage("le sujet n'a pas pu être créé!")
           }
     }
 
@@ -56,19 +56,19 @@ const AdminArticleCreate = () => {
            
                 <form onSubmit ={handleCreateArticle} className="formposition">
                         <div>
-                            <h3>Titre de l'article:</h3>
+                            <h3>Titre du sujet:</h3>
                             <div className="createInputs">
                              <input placeholder="Entrer le titre de l'article" type="text"  name="articletitle" required />
                             </div>
                         </div>
                         <div>
-                            <h3>Contenu de l'article:</h3>
+                            <h3>Contenu du sujet:</h3>
                             <div className="createInputs">
                               <textarea placeholder="Entrer le sujet de l'article" name="articlebody" rows="5" required></textarea>
                             </div>
                         </div>
                         {decodedToken.data.role !== 3 && (
-                            <button type="submit">Soumettre l'article</button>              
+                            <button type="submit">Soumettre le sujet</button>              
                         )}                        
                 </form>
                 <Footer />

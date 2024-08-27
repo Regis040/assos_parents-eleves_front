@@ -11,6 +11,7 @@
     "react-dom": "^18.2.0",
     "react-router": "^6.21.1",
     "react-router-dom": "^6.21.1",
+    "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
     "sass": "^1.69.5",
     "web-vitals": "^2.1.4"
@@ -20,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass":"sass -w assets/scss:assets/css"
+    "sass": "sass -w assets/scss:assets/css"
   },
   "eslintConfig": {
     "extends": [
@@ -43,6 +44,5 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "author": "",
-  "license": "ISC",
-  "devDependencies": {}
+  "license": "ISC"
 }

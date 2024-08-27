@@ -28,32 +28,59 @@ const AdminArticlesPage = () => {
     })();
   }, []);
 
-  const handleDeleteArticle = async (event, articleId) => {   
-    const token = localStorage.getItem("jwt");    
-    await fetch("http://localhost:3000/articles/" + articleId, {        
-      method: "DELETE",    //   
-      headers: { Authorization: "Bearer " + token },
-    });    
-    const articlesResponse = await fetch("http://localhost:3000/articles");
-    const articlesResponseData = await articlesResponse.json();   
-    setArticles(articlesResponseData);
+  const handleDeleteArticle = async (event, articleId) => {
+    try {
+      const token = localStorage.getItem("jwt");
+      const response = await fetch(`http://localhost:3000/articles/${articleId}`, {
+        method: "DELETE",
+        headers: { Authorization: "Bearer " + token },
+      });
+      
+      if (!response.ok) { // Vérifie si la réponse n'est pas "ok" : plage 200-299)
+        if (response.status === 403) {
+          alert("Vous n'êtes pas autorisé à supprimer cet article.");
+        } else {
+          alert("Une erreur est survenue lors de la suppression de l'article.");
+        }
+        return; // Stoppe l'exécution de la fonction si une erreur est survenue
+      }
+      
+      const articlesResponse = await fetch("http://localhost:3000/articles");
+      const articlesResponseData = await articlesResponse.json();
+      setArticles(articlesResponseData);
+    } catch (error) {
+      console.error("Error deleting article:", error);
+      alert("Une erreur est survenue. Veuillez réessayer plus tard.");
+    }
   };
+  
 
   const handleDeleteComment = async (event, commentId) => {
     try {
       const token = localStorage.getItem("jwt");
-      await fetch(`http://localhost:3000/comments/${commentId}`, {
+      const response = await fetch(`http://localhost:3000/comments/${commentId}`, {
         method: "DELETE",
         headers: { Authorization: "Bearer " + token },
-      });  
+      });
+      
+      if (!response.ok) { // Vérifie si la réponse n'est pas "ok" : plage 200-299
+        if (response.status === 403) {
+          alert("Vous n'êtes pas autorisé à supprimer un commentaire.");
+        } else {
+          alert("Une erreur est survenue lors de la suppression du commentaire.");
+        }
+        return; // Stoppe l'exécution de la fonction si une erreur est survenue
+      }
+      
       const commentsResponse = await fetch("http://localhost:3000/comments");
       const commentsResponseData = await commentsResponse.json();
-  // console.log(commentsResponseData)
       setComments(commentsResponseData);
     } catch (error) {
       console.error("Error deleting comment:", error);
+      alert("Une erreur est survenue. Veuillez réessayer plus tard.");
     }
   };
+  
   
   return (
     <>
@@ -62,7 +89,7 @@ const AdminArticlesPage = () => {
         <h2>Vous êtes connecté en tant qu'admin : gérer les sujets et leurs commentaires </h2>
       </div>
       <div id="createArticle">
-        <Link to="/admin/articles/create">Créer un nouvel article</Link>
+        <Link to="/admin/articles/create">Créer un sujet</Link>
       </div>
       {articles ? (
         <>

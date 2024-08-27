@@ -23,14 +23,31 @@ const AdminUserPage = () => {
     }, []);
   
     const handleDeleteUser = async (event, UserId) => {
-      await fetch("http://localhost:3000/users/" + UserId, {
-        method: "DELETE",
-        headers: { Authorization: "Bearer " + token },
-      });  
-      const usersResponse = await fetch("http://localhost:3000/users");
-      const usersResponseData = await usersResponse.json();
-      setUsers(usersResponseData);
-    };
+        try {
+          const token = localStorage.getItem("jwt");
+          const response = await fetch(`http://localhost:3000/users/${UserId}`, {
+            method: "DELETE",
+            headers: { Authorization: "Bearer " + token },
+          });
+          
+          if (!response.ok) { // Vérifie si la réponse n'est pas "ok" : zone 200-299)
+            if (response.status === 403) {
+              alert("Vous n'êtes pas autorisé à supprimer un utilisateur.");
+            } else {
+              alert("Une erreur est survenue lors de la suppression de l'utilisateur.");
+            }
+            return; // Stoppe l'exécution de la fonction si une erreur est survenue
+          }
+          
+          const usersResponse = await fetch("http://localhost:3000/users");
+          const usersResponseData = await usersResponse.json();
+          setUsers(usersResponseData);
+        } catch (error) {
+          console.error("Error deleting user:", error);
+          alert("Une erreur est survenue. Veuillez réessayer plus tard.");
+        }
+      };
+      
 
     return (
         <>

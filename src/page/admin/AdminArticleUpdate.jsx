@@ -20,32 +20,40 @@ const AdminArticleUpdate = () => {
 
   const handleUpdateArticle = async (event) => {
     event.preventDefault();
-
-    const articletitle = event.target.articletitle.value;
-    const articlebody = event.target.articlebody.value;   
   
+    const articletitle = event.target.articletitle.value;
+    const articlebody = event.target.articlebody.value;  
     const articleUpdateData = {
       articletitle: articletitle,
       articlebody: articlebody,
-    };
-
+    };  
     const articleUpdateDataJson = JSON.stringify(articleUpdateData);
-
+  
     const token = localStorage.getItem("jwt");
-
-    const updateArticleResponse = await fetch("http://localhost:3000/articles/" + id, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Bearer " + token,
-      },
-      body: articleUpdateDataJson,
-    });
-
-    if (updateArticleResponse.status === 201) {
-      setMessage("Mise à jour éffectuée");
-    } else {
-      setMessage("Vous n'avez pas l'autorisation pour modifier cet élément");
+  
+    try {
+      const updateArticleResponse = await fetch(`http://localhost:3000/articles/${id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "Bearer " + token,
+        },
+        body: articleUpdateDataJson,
+      });
+  
+      if (!updateArticleResponse.ok) { // Vérifie si la réponse n'est pas "ok"
+        if (updateArticleResponse.status === 403) {
+          setMessage("Vous n'avez pas l'autorisation pour modifier le sujet");
+        } else {
+          setMessage("Une erreur est survenue lors de la mise à jour du sujet.");
+        }
+        return; // Stoppe l'exécution si une erreur est survenue
+      }
+  
+      setMessage("Mise à jour effectuée");
+    } catch (error) {
+      console.error("Error updating article:", error);
+      setMessage("Une erreur est survenue. Veuillez réessayer plus tard.");
     }
   };
 
