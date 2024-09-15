@@ -8,8 +8,7 @@ import './Form.scss';
 const ArticlesPage = () => {
   const [articles, setArticles] = useState(null);
   const [comments, setComments] = useState(null);
-  const [articlesId, setArticlesId] = useState(null);
-  console.log(articles)
+  const [articlesId, setArticlesId] = useState(null);  
   const { id }=useParams ();
 
   const token = localStorage.getItem("jwt");

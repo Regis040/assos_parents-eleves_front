@@ -51,8 +51,7 @@ h2, h3, h4 {
     color:$purple-light-color ;
 }
 
-#createArticle{
-    color: $purple-dark-color;
+#createArticle{    
     background-color: $purple-light-color;
     text-align: center;
     padding: 20px;
@@ -61,11 +60,14 @@ h2, h3, h4 {
     border-radius: 20px;
     margin: auto;
 }
+#createArticle a{
+    color: $purple-dark-color;
+}
 #createArticle:hover {
     background-color: $formbgcolor;         
 }
 #createArticle a:hover {    
-    color:#DDC9D8;   
+    color:$purple-light-color;   
 }
 
 /* Requêtes média pour adaptabilité mobile */
